@@ -1,0 +1,112 @@
+﻿@model IEnumerable<TravelBookingWeb.Models.Hotel>
+@{
+    ViewData["Title"] = "Rezultate Căutare";
+    
+    var hoteluriLista = Model ?? new List<TravelBookingWeb.Models.Hotel>();
+    
+    // AICI E REZOLVAREA: Construim JSON-ul folosind noile proprietăți booleene (AreWiFi, ArePiscina etc.)
+    var jsonHoteluri = System.Text.Json.JsonSerializer.Serialize(hoteluriLista.Select(h => new
+    {
+        id = h.Id,
+        name = h.Nume ?? "Hotel Necunoscut",
+        // Preluam destinatia ori din textul scris manual, ori din dropdown-ul vechi
+        dest = h.DestinatieText ?? (h.Destinatie != null ? h.Destinatie.Tara : ""),
+        stars = h.Stele,
+        // Folosim pretul real din baza de date
+        price = h.Pret,
+        rating = h.Rating.ToString("0.0"),
+        desc = h.Descriere ?? "",
+        perk = "Anulare gratuită",
+        
+        // Cream manual o lista text cu facilitatile bifate, pentru a fi usor de filtrat in JavaScript
+        fac = new List<string> {
+            h.AreWiFi ? "Wi-Fi" : null,
+            h.ArePiscina ? "Piscina" : null,
+            h.AreParcare ? "Parcare" : null,
+            h.AreMicDejun ? "Mic dejun" : null,
+            h.AreAerConditionat ? "AC" : null,
+            h.AreFitness ? "Gym" : null,
+            h.AreSpa ? "Spa" : null,
+            h.PermiteAnimale ? "Animale" : null
+        }.Where(f => f != null).ToList(),
+        
+        // Luam si prima poza pentru afisarea in card (daca vrei s-o pui in JS)
+        image = !string.IsNullOrEmpty(h.ImaginiGalerie) ? h.ImaginiGalerie.Split(',')[0].Trim() : "https://images.unsplash.com/photo-1566073771259-6a8506099945"
+    }));
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/rezultate.css" asp-append-version="true">
+}
+
+<div class="results-page-container">
+    <div class="filters-sidebar">
+        <h3>Filtrează după</h3>
+        <hr>
+
+        <div class="filter-group">
+            <label><strong>Destinație</strong></label>
+            <div class="checkbox-group" style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px; max-height: 200px; overflow-y: auto;">
+                <label class="filter-item"><input type="checkbox" class="filter-dest" value="București"> București</label>
+                <label class="filter-item"><input type="checkbox" class="filter-dest" value="Paris"> Paris</label>
+                <label class="filter-item"><input type="checkbox" class="filter-dest" value="Roma"> Roma</label>
+                <label class="filter-item"><input type="checkbox" class="filter-dest" value="Londra"> Londra</label>
+                <!-- Am adaugat cateva optiuni ca sa se potriveasca cu noul datalist din formularul de Edit -->
+                <label class="filter-item"><input type="checkbox" class="filter-dest" value="Barcelona"> Barcelona</label>
+                <label class="filter-item"><input type="checkbox" class="filter-dest" value="Dubai"> Dubai</label>
+                <label class="filter-item"><input type="checkbox" class="filter-dest" value="New York"> New York</label>
+            </div>
+        </div>
+        <br>
+
+        <div class="filter-group">
+            <label><strong>Preț maxim pe noapte</strong></label>
+            <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px;">
+                <input type="range" id="priceRange" min="100" max="5000" step="100" value="5000" style="flex: 1; accent-color: #ff3b30;">
+                <div style="display: flex; align-items: center; border: 1px solid #ccc; border-radius: 6px; padding: 2px 8px;">
+                    <input type="number" id="priceInput" min="100" max="5000" step="100" value="5000" style="width: 60px; border: none; outline: none; font-weight: bold; text-align: center;">
+                    <span style="color: #666; font-size: 14px; margin-left: 5px;">RON</span>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="filter-group">
+            <h4>Stele</h4>
+            <label class="filter-item"><input type="checkbox" class="filter-stars" value="5"> <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> (5 stele)</label>
+            <label class="filter-item"><input type="checkbox" class="filter-stars" value="4"> <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> (4 stele)</label>
+            <label class="filter-item"><input type="checkbox" class="filter-stars" value="3"> <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> (3 stele)</label>
+        </div>
+        <br>
+
+        <div class="filter-group">
+            <label><strong>Facilități</strong></label>
+            <div class="checkbox-group" style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                <!-- Cuvintele de la 'value' trebuie sa fie IDENTICE cu cele din JSON-ul facut de noi mai sus -->
+                <label class="filter-item"><input type="checkbox" class="filter-fac" value="Wi-Fi"> Wi-Fi gratuit</label>
+                <label class="filter-item"><input type="checkbox" class="filter-fac" value="Piscina"> Piscină</label>
+                <label class="filter-item"><input type="checkbox" class="filter-fac" value="Parcare"> Parcare privată</label>
+                <label class="filter-item"><input type="checkbox" class="filter-fac" value="Mic dejun"> Mic dejun inclus</label>
+                <label class="filter-item"><input type="checkbox" class="filter-fac" value="AC"> Aer condiționat</label>
+                <label class="filter-item"><input type="checkbox" class="filter-fac" value="Gym"> Sală de fitness</label>
+                <label class="filter-item"><input type="checkbox" class="filter-fac" value="Spa"> Spa & Centru Wellness</label>
+                <label class="filter-item"><input type="checkbox" class="filter-fac" value="Animale"> Animale de companie permise</label>
+            </div>
+        </div>
+        <br>
+
+        <button class="btn-search" onclick="applyFilters()" style="width: 100%; padding: 12px; border-radius: 8px; background-color: #0057ff; color: white; border: none; font-weight: bold; cursor: pointer;">Aplică filtre</button>
+    </div>
+
+    <main class="results-list">
+        <h2 class="results-header" id="results-count">Se încarcă proprietățile...</h2>
+        <div id="hotels-container"></div>
+    </main>
+</div>
+
+@section Scripts {
+    <script>
+        window.allHotels = @Html.Raw(jsonHoteluri);
+    </script>
+    <script src="~/js/filtre.js"></script>
+}

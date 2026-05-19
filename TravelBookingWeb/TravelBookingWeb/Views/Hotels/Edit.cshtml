@@ -1,0 +1,120 @@
+﻿@model TravelBookingWeb.Models.Hotel
+
+@{
+    ViewData["Title"] = "Editează Hotel";
+}
+
+<div class="container mt-5 mb-5">
+    <div class="card shadow-sm border-0 rounded-3 p-4">
+        <h2 class="mb-4">Editează Hotelul: <span class="text-primary">@Model.Nume</span></h2>
+
+        <form id="formEditHotel" asp-action="Edit" method="post">
+            <input type="hidden" asp-for="Id" />
+
+            <!-- Nume și Destinație -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Nume Hotel <i class="fa-solid fa-circle-exclamation text-warning ms-1 d-none" id="warn-nume"></i></label>
+                    <input type="text" asp-for="Nume" class="form-control check-empty" id="input-nume" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Destinație (Oraș, Țară) <i class="fa-solid fa-circle-exclamation text-warning ms-1 d-none" id="warn-destinatie"></i></label>
+                    <input type="text" name="DestinatieText" class="form-control check-empty" id="input-destinatie" list="locatiiFaimoase" value="@(Model.Destinatie != null ? Model.Destinatie.Oras + ", " + Model.Destinatie.Tara : "")" placeholder="Ex: Paris, Franta" required>
+                    <datalist id="locatiiFaimoase">
+                        <option value="București, România"></option>
+                        <option value="Cluj-Napoca, România"></option>
+                        <option value="Brașov, România"></option>
+                        <option value="Paris, Franța"></option>
+                        <option value="Roma, Italia"></option>
+                        <option value="Londra, Marea Britanie"></option>
+                        <option value="Barcelona, Spania"></option>
+                        <option value="Atena, Grecia"></option>
+                        <option value="Dubai, EAU"></option>
+                        <option value="New York, SUA"></option>
+                    </datalist>
+                </div>
+            </div>
+
+            <!-- Stele, Rating, Preț de Bază -->
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label class="form-label fw-bold">Stele <i class="fa-solid fa-circle-exclamation text-warning ms-1 d-none" id="warn-stele"></i></label>
+                    <input type="number" asp-for="Stele" class="form-control check-empty" id="input-stele" min="1" max="5" required>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label fw-bold">Rating (Scor)</label>
+                    <input type="number" asp-for="Rating" class="form-control" step="0.1" min="1" max="10">
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label fw-bold">Preț de Bază (Fără facilități)</label>
+                    <input type="number" asp-for="PretBaza" class="form-control" step="1">
+                </div>
+            </div>
+
+            <!-- Descriere Hotel (ÎNLOCUIT GALERIE POZE) -->
+            <div class="mb-4">
+                <label class="form-label fw-bold">Descriere Detaliată Hotel <i class="fa-solid fa-circle-exclamation text-warning ms-1 d-none" id="warn-descriere"></i></label>
+                <textarea asp-for="Descriere" class="form-control check-empty" id="input-descriere" rows="8" required
+                          placeholder="Exemplu descriere: Acest hotel de lux oferă o experiență de neuitat în inima orașului. Camerele noastre spațioase sunt dotate cu mobilier modern, paturi king-size și ferestre mari ce oferă o vedere panoramică spectaculoasă. Oaspeții se pot bucura de un mic dejun bogat cu produse locale proaspete, o zonă de spa ultra-modernă și acces facil către principalele puncte de atracție turistică. Serviciile noastre de 5 stele includ recepție non-stop, room service și asistență turistică personalizată pentru a asigura confortul deplin al fiecărui vizitator..."></textarea>
+                <small class="text-muted">Această descriere va apărea pe pagina principală a hotelului pentru clienți.</small>
+            </div>
+
+            <!-- BIFE FACILITĂȚI -->
+            <h5 class="fw-bold mt-4 border-bottom pb-2">Facilități (Bifarea lor va crește prețul automat)</h5>
+            <div class="row mb-4">
+                <div class="col-md-3 mb-2"><div class="form-check"><input class="form-check-input" type="checkbox" asp-for="AreWiFi"><label class="form-check-label">Wi-Fi gratuit (+0 RON)</label></div></div>
+                <div class="col-md-3 mb-2"><div class="form-check"><input class="form-check-input" type="checkbox" asp-for="ArePiscina"><label class="form-check-label">Piscină (+50 RON)</label></div></div>
+                <div class="col-md-3 mb-2"><div class="form-check"><input class="form-check-input" type="checkbox" asp-for="AreParcare"><label class="form-check-label">Parcare privată (+30 RON)</label></div></div>
+                <div class="col-md-3 mb-2"><div class="form-check"><input class="form-check-input" type="checkbox" asp-for="AreMicDejun"><label class="form-check-label">Mic dejun inclus (+40 RON)</label></div></div>
+                <div class="col-md-3 mb-2"><div class="form-check"><input class="form-check-input" type="checkbox" asp-for="AreAerConditionat"><label class="form-check-label">Aer condiționat (+20 RON)</label></div></div>
+                <div class="col-md-3 mb-2"><div class="form-check"><input class="form-check-input" type="checkbox" asp-for="AreFitness"><label class="form-check-label">Sală de fitness (+30 RON)</label></div></div>
+                <div class="col-md-3 mb-2"><div class="form-check"><input class="form-check-input" type="checkbox" asp-for="AreSpa"><label class="form-check-label">Spa & Wellness (+80 RON)</label></div></div>
+                <div class="col-md-3 mb-2"><div class="form-check"><input class="form-check-input" type="checkbox" asp-for="PermiteAnimale"><label class="form-check-label">Animale permise (+50 RON)</label></div></div>
+            </div>
+
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-primary fw-bold px-4">Salvează Modificările</button>
+                <a asp-action="Index" class="btn btn-secondary">Anulează</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Validare live (Semnul Exclamarii)
+        document.querySelectorAll('.check-empty').forEach(input => {
+            input.addEventListener('input', function() {
+                let suffix = this.id.split('-')[1];
+                let warnIcon = document.getElementById('warn-' + suffix);
+                
+                if (warnIcon) {
+                    if (this.value.trim() === '') {
+                        warnIcon.classList.remove('d-none');
+                        this.classList.add('is-invalid');
+                    } else {
+                        warnIcon.classList.add('d-none');
+                        this.classList.remove('is-invalid');
+                    }
+                }
+            });
+        });
+
+        // Oprim salvarea daca exista campuri goale
+        document.getElementById('formEditHotel').addEventListener('submit', function(e) {
+            let isValid = true;
+            document.querySelectorAll('.check-empty').forEach(input => {
+                if (input.value.trim() === '') {
+                    isValid = false;
+                    let suffix = input.id.split('-')[1];
+                    let warnIcon = document.getElementById('warn-' + suffix);
+                    if (warnIcon) warnIcon.classList.remove('d-none');
+                }
+            });
+            if (!isValid) {
+                e.preventDefault();
+                alert("Te rugăm să completezi toate câmpurile obligatorii, inclusiv descrierea!");
+            }
+        });
+    </script>
+}

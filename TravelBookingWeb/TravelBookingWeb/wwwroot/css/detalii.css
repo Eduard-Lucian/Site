@@ -1,0 +1,175 @@
+
+
+.details-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+
+.property-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.property-title-section h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.property-location {
+  color: #666;
+  font-size: 15px;
+}
+
+.property-location i {
+  color: #d90429; 
+}
+
+.property-rating-box {
+  text-align: right;
+}
+
+.rating-badge-large {
+  background-color: #008009;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.rating-reviews {
+  font-size: 13px;
+  color: #777;
+}
+
+
+.property-main-image {
+  width: 100%;
+  height: 500px; 
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.property-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.property-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.property-description {
+  flex: 2; 
+}
+
+.property-description h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.property-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+
+.booking-box {
+  flex: 1; 
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
+ 
+}
+
+.booking-price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d90429;
+  margin-bottom: 5px;
+}
+
+.booking-price-sub {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.booking-form .form-group {
+  margin-bottom: 15px;
+}
+
+.booking-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.booking-form input, .booking-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.booking-form input:focus, .booking-form select:focus {
+  border-color: #0057ff;
+}
+
+.btn-reserve {
+  width: 100%;
+  background-color: #0057ff;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.btn-reserve:hover {
+  background-color: #0046cc;
+}
+
+
+@media (max-width: 900px) {
+  .property-content {
+    flex-direction: column; 
+  }
+  .booking-box {
+    width: 100%;
+  }
+  .property-main-image {
+    height: 300px; 
+  }
+}

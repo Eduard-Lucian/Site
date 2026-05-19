@@ -1,0 +1,142 @@
+﻿@model TravelBookingWeb.Models.Hotel
+
+@{
+    ViewData["Title"] = Model.Nume + " - Detalii";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/detalii.css" asp-append-version="true">
+}
+
+<main class="details-container">
+    <header class="property-header">
+        <div class="property-title-section">
+            <h1>
+                @Model.Nume
+                <span class="stars">
+                    @for (int i = 0; i < Model.Stele; i++)
+                    {
+                        <i class="fa-solid fa-star"></i>
+                    }
+                </span>
+            </h1>
+            <div class="property-location">
+                <i class="fa-solid fa-location-dot"></i> @(Model.DestinatieText ?? (Model.Destinatie != null ? Model.Destinatie.Oras + ", " + Model.Destinatie.Tara : "Locație necunoscută"))
+            </div>
+        </div>
+        <div class="property-rating-box">
+            <div class="rating-badge-large">@Model.Rating.ToString("0.0") Scor</div>
+        </div>
+    </header>
+
+    @{
+        // Spargem textul cu imagini din baza de date intr-o lista, folosind virgula ca separator
+        var listaPoze = string.IsNullOrEmpty(Model.ImaginiGalerie)
+            ? new string[] { "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" }
+            : Model.ImaginiGalerie.Split(',');
+    }
+
+    <div id="hotelCarousel" class="carousel slide property-main-image rounded-4 overflow-hidden shadow-sm mb-4" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner" style="height: 500px;">
+            @for (int i = 0; i < listaPoze.Length; i++)
+            {
+                <div class="carousel-item @(i == 0 ? "active" : "")" style="height: 100%;">
+                    <img src="@listaPoze[i].Trim()" class="d-block w-100 h-100" style="object-fit: cover;" alt="Imagine @Model.Nume">
+                </div>
+            }
+        </div>
+
+        @if (listaPoze.Length > 1)
+        {
+            <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                <span class="visually-hidden">Precedenta</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hotelCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                <span class="visually-hidden">Următoarea</span>
+            </button>
+        }
+    </div>
+
+    <div class="property-content">
+        <section class="property-description">
+            <h2>Descriere</h2>
+            <p>@Model.Descriere</p>
+
+            <h2 style="margin-top: 30px;">Facilități principale</h2>
+            <ul style="list-style-type: none; margin-left: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; color: #555;">
+                @if (Model.AreWiFi)
+                {
+                    <li><i class="fa-solid fa-wifi text-primary me-2"></i> Wi-Fi gratuit</li>
+                }
+                @if (Model.ArePiscina)
+                {
+                    <li><i class="fa-solid fa-water-ladder text-primary me-2"></i> Piscină</li>
+                }
+                @if (Model.AreParcare)
+                {
+                    <li><i class="fa-solid fa-square-parking text-primary me-2"></i> Parcare privată</li>
+                }
+                @if (Model.AreMicDejun)
+                {
+                    <li><i class="fa-solid fa-mug-saucer text-primary me-2"></i> Mic dejun inclus</li>
+                }
+                @if (Model.AreAerConditionat)
+                {
+                    <li><i class="fa-solid fa-snowflake text-primary me-2"></i> Aer condiționat</li>
+                }
+                @if (Model.AreFitness)
+                {
+                    <li><i class="fa-solid fa-dumbbell text-primary me-2"></i> Sală de fitness</li>
+                }
+                @if (Model.AreSpa)
+                {
+                    <li><i class="fa-solid fa-spa text-primary me-2"></i> Spa & Centru Wellness</li>
+                }
+                @if (Model.PermiteAnimale)
+                {
+                    <li><i class="fa-solid fa-paw text-primary me-2"></i> Animale de companie permise</li>
+                }
+
+                @if (!Model.AreWiFi && !Model.ArePiscina && !Model.AreParcare && !Model.AreMicDejun && !Model.AreAerConditionat && !Model.AreFitness && !Model.AreSpa && !Model.PermiteAnimale)
+                {
+                    <li>Hotelul dispune de facilitățile standard.</li>
+                }
+            </ul>
+        </section>
+
+        <aside class="booking-box">
+            <div class="booking-price">@Model.Pret RON</div>
+            <div class="booking-price-sub">pe noapte, taxe incluse</div>
+
+            <form class="booking-form" action="/Rezervari/Checkout" method="get">
+
+                <input type="hidden" name="tip" value="Hotel" />
+                <input type="hidden" name="id" value="@Model.Id" />
+                <input type="hidden" name="nume" value="@Model.Nume" />
+                <input type="hidden" name="pret" value="@Model.Pret" />
+
+                <div class="form-group">
+                    <label>Check-in</label>
+                    <input type="date" name="checkin" min="@DateTime.Now.ToString("yyyy-MM-dd")" required>
+                </div>
+                <div class="form-group">
+                    <label>Check-out</label>
+                    <input type="date" name="checkout" min="@DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")" required>
+                </div>
+                <div class="form-group">
+                    <label>Persoane</label>
+                    <select name="persoane">
+                        <option>1 Adult</option>
+                        <option selected>2 Adulți</option>
+                        <option>2 Adulți, 1 Copil</option>
+                        <option>3 Adulți</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-reserve">Rezervă Acum</button>
+            </form>
+        </aside>
+    </div>
+</main>

@@ -1,0 +1,240 @@
+﻿@model TravelBookingWeb.Models.Hotel
+
+@{
+    ViewData["Title"] = Model.Nume;
+    
+    // Spargem string-ul de imagini (separate prin virgulă) într-o listă
+    var poze = Model.ImaginiGalerie?.Split(',')
+               .Select(p => p.Trim())
+               .Where(p => !string.IsNullOrEmpty(p))
+               .ToList() ?? new List<string>();
+
+    // Dacă nu avem poze în galerie, folosim imaginea principală sau un placeholder
+    if (!poze.Any())
+    {
+        poze.Add(!string.IsNullOrEmpty(Model.Imagine) ? Model.Imagine : "https://via.placeholder.com/1200x600?text=Imagine+Indisponibila");
+    }
+}
+
+@section Styles {
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .hotel-details-container {
+            padding: 40px 0;
+        }
+        
+        /* Stil Carusel WOW */
+        .carousel {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .carousel-item img {
+            height: 550px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        /* Caseta de Rezervare (Sticky) */
+        .booking-card {
+            position: sticky;
+            top: 25px;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .rating-badge-large {
+            background-color: #003580;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-weight: 800;
+            font-size: 1.4rem;
+            display: inline-block;
+        }
+
+        .facility-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: #333;
+            font-size: 1.05rem;
+        }
+
+            .facility-item i {
+                color: #006ce4;
+                font-size: 1.2rem;
+                width: 25px;
+                text-align: center;
+            }
+
+        .section-title {
+            font-weight: 800;
+            color: #1a1a1a;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+    </style>
+}
+
+<div class="container hotel-details-container">
+    <!-- Header: Nume, Stele și Locație -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <div class="d-flex align-items-center gap-3 mb-2">
+                <h1 class="fw-bold mb-0 text-dark" style="font-size: 2.5rem;">@Model.Nume</h1>
+                <div class="text-warning fs-4">
+                    @for (int i = 0; i < Model.Stele; i++)
+                    {
+                        <i class="fa-solid fa-star"></i>
+                    }
+                </div>
+            </div>
+            <p class="text-muted fs-5 mb-0">
+                <i class="fa-solid fa-location-dot text-danger me-1"></i>
+                @(Model.Destinatie?.Oras ?? "Locație"), @(Model.Destinatie?.Tara ?? "Destinație necunoscută")
+            </p>
+        </div>
+        <div class="text-end">
+            <div class="rating-badge-large shadow-sm">@Model.Rating.ToString("0.0") Scor</div>
+            <div class="small text-muted mt-2 fw-bold text-uppercase tracking-wide">Apreciat de oaspeți</div>
+        </div>
+    </div>
+
+    <div class="row g-5">
+        <!-- COLOANA STÂNGĂ: Imagini și Descriere -->
+        <div class="col-lg-8">
+            
+            <!-- Carusel Imagini (Slider automat și cu săgeți) -->
+            <div id="hotelSlider" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="3500">
+                <div class="carousel-indicators">
+                    @for (int i = 0; i < poze.Count; i++)
+                    {
+                        <button type="button" data-bs-target="#hotelSlider" data-bs-slide-to="@i" class="@(i == 0 ? "active" : "")" aria-current="@(i == 0 ? "true" : "false")" aria-label="Slide @(i + 1)"></button>
+                    }
+                </div>
+                
+                <div class="carousel-inner">
+                    @for (int i = 0; i < poze.Count; i++)
+                    {
+                        <div class="carousel-item @(i == 0 ? "active" : "")">
+                            <img src="@poze[i]" class="d-block w-100" alt="Imagine @Model.Nume @i">
+                        </div>
+                    }
+                </div>
+                
+                <!-- Săgețile de control manual -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#hotelSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.8));"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hotelSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.8));"></span>
+                    <span class="visually-hidden">Următor</span>
+                </button>
+            </div>
+
+            <!-- Descriere Completă -->
+            <div class="mb-5 bg-white p-4 rounded-4 shadow-sm border">
+                <h3 class="section-title">Descriere Proprietate</h3>
+                <p class="fs-5" style="text-align: justify; line-height: 1.8; color: #444;">
+                    @Model.Descriere
+                </p>
+            </div>
+
+            <!-- Facilități Principale cu Iconițe -->
+            <div class="bg-white p-4 rounded-4 shadow-sm border mb-4">
+                <h4 class="section-title">Ce oferă această locație</h4>
+                <div class="row mt-3">
+                    @if (Model.AreWiFi)
+                    {
+                        <div class="col-md-6 facility-item"><i class="fa-solid fa-wifi"></i> Wi-Fi gratuit de mare viteză</div>
+                    }
+                    @if (Model.AreMicDejun)
+                    {
+                        <div class="col-md-6 facility-item"><i class="fa-solid fa-mug-saucer"></i> Mic dejun fabulos inclus</div>
+                    }
+                    
+                    <!-- NOTĂ: Adaugă aceste if-uri doar dacă proprietățile există în Modelul tău Hotel.cs -->
+                    <!-- Dacă ai erori CS1061, șterge sau comentează blocul de mai jos până la </div> -->
+                    @*
+                    @if (Model.ArePiscina) { <div class="col-md-6 facility-item"><i class="fa-solid fa-person-swimming"></i> Piscină exterioară / interioară</div> }
+                    @if (Model.AreSpa) { <div class="col-md-6 facility-item"><i class="fa-solid fa-spa"></i> Centru SPA & Wellness</div> }
+                    @if (Model.AreParcare) { <div class="col-md-6 facility-item"><i class="fa-solid fa-square-parking"></i> Parcare privată disponibilă</div> }
+                    @if (Model.AreFitness) { <div class="col-md-6 facility-item"><i class="fa-solid fa-dumbbell"></i> Sală de fitness modernă</div> }
+                    @if (Model.PermiteAnimale) { <div class="col-md-6 facility-item"><i class="fa-solid fa-paw"></i> Animale de companie permise</div> } 
+                    *@
+                </div>
+            </div>
+        </div>
+
+        <!-- COLOANA DREAPTĂ: Formular Rezervare -->
+        <div class="col-lg-4">
+            <div class="booking-card">
+                <h4 class="fw-bold text-dark mb-1">Rezervă-ți sejurul</h4>
+                <div class="d-flex align-items-baseline gap-2 mb-3 mt-3">
+                    <span class="fs-1 fw-bold text-danger">@Model.Pret.ToString("N0") RON</span>
+                    <span class="text-muted fw-bold">/ noapte</span>
+                </div>
+                
+                <p class="text-success fw-bold small"><i class="fa-solid fa-check"></i> Anulare gratuită disponibilă</p>
+                <hr class="mb-4">
+                
+                <form asp-controller="Rezervare" asp-action="Create" method="get">
+                    <input type="hidden" name="hotelId" value="@Model.Id" />
+                    
+                    <div class="mb-3">
+                        <label class="form-label fw-bold text-muted small text-uppercase">Check-in</label>
+                        <input type="date" class="form-control form-control-lg bg-light" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold text-muted small text-uppercase">Check-out</label>
+                        <input type="date" class="form-control form-control-lg bg-light" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label fw-bold text-muted small text-uppercase">Oaspeți</label>
+                        <select class="form-select form-select-lg bg-light">
+                            <option value="1">1 Adult</option>
+                            <option value="2" selected>2 Adulți</option>
+                            <option value="3">3 Adulți</option>
+                            <option value="4">Familie (2 Adulți + 2 Copii)</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary w-100 fw-bold fs-5 shadow" style="padding: 15px; border-radius: 10px;">
+                        Rezervă Acum
+                    </button>
+                </form>
+
+                <div class="mt-4 text-center">
+                    <span class="text-muted small"><i class="fa-solid fa-lock text-success"></i> Plată securizată. Confirmare instantanee.</span>
+                </div>
+            </div>
+            
+            <!-- Acțiuni Admin -->
+            @if (User.IsInRole("Admin"))
+            {
+                <div class="mt-4 d-grid gap-2">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-outline-warning fw-bold py-2 border-2">
+                        <i class="fa-solid fa-pen-to-square"></i> Modifică acest hotel
+                    </a>
+                </div>
+            }
+            <div class="mt-3 text-center">
+                <a asp-action="Index" class="text-decoration-none text-primary fw-bold">
+                    <i class="fa-solid fa-arrow-left me-1"></i> Înapoi la căutare
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

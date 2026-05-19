@@ -1,0 +1,225 @@
+﻿@model IEnumerable<TravelBookingWeb.Models.Activitate>
+@{
+    ViewData["Title"] = "Activități";
+
+    var activitatiLista = Model ?? new List<TravelBookingWeb.Models.Activitate>();
+
+    var jsonActivitati = System.Text.Json.JsonSerializer.Serialize(activitatiLista.Select(a => new
+    {
+        id = a.Id,
+        name = a.Nume_Activitate ?? "Activitate",
+        cat = a.Categorie ?? "Tururi",
+        dur = a.Durata ?? "1-3 ore",
+        price = a.Pret_pe_persoana,
+        loc = a.Destinatie != null ? a.Destinatie.Oras + ", " + a.Destinatie.Tara : "Locație nedefinită",
+        perk = "Ghid inclus",
+        icon = (a.Categorie != null && a.Categorie.Contains("Muze")) ? "fa-palette" :
+                   (a.Categorie != null && a.Categorie.Contains("Gastro")) ? "fa-utensils" : "fa-ticket",
+        color = "#0057ff",
+        image = !string.IsNullOrEmpty(a.Imagine) ? a.Imagine : "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=500"
+    }));
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/rezultate.css" asp-append-version="true">
+    <style>
+        .hotel-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+            border: 1px solid #f0f0f0 !important;
+            border-radius: 12px !important;
+            background: #ffffff !important;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+            .hotel-card:hover {
+                transform: translateY(-6px) !important;
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+            }
+
+        .img-hover-wrapper {
+            width: 240px;
+            min-height: 220px;
+            flex-shrink: 0;
+            position: relative;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .icon-layer, .photo-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.4s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        .icon-layer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            z-index: 2;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .photo-layer {
+            object-fit: cover;
+            z-index: 1;
+            opacity: 0;
+            transform: scale(1.15);
+        }
+
+        .hotel-card:hover .icon-layer {
+            opacity: 0;
+            transform: scale(0.85);
+        }
+
+        .hotel-card:hover .photo-layer {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .hotel-info {
+            padding: 25px !important;
+        }
+    </style>
+}
+
+<div class="results-page-container">
+    <aside class="filters-sidebar">
+        <h3>Filtrează Activități</h3>
+        <hr style="border: none; border-top: 1px solid #eee; margin-bottom: 20px;">
+
+        <div class="filter-group">
+            <label><strong>Categorie</strong></label>
+            <div class="checkbox-group" style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                <label class="filter-item"><input type="checkbox" class="filter-cat" value="Tururi"> Tururi Ghidate</label>
+                <label class="filter-item"><input type="checkbox" class="filter-cat" value="Muzee"> Bilete la Muzee</label>
+                <label class="filter-item"><input type="checkbox" class="filter-cat" value="Croaziere"> Croaziere & Bărci</label>
+                <label class="filter-item"><input type="checkbox" class="filter-cat" value="Gastronomie"> Gastronomie & Vin</label>
+                <label class="filter-item"><input type="checkbox" class="filter-cat" value="Festivaluri/Turnee"> Festivaluri & Turnee</label>
+                <label class="filter-item"><input type="checkbox" class="filter-cat" value="Parcuri de distracții"> Parcuri de distracții</label>
+            </div>
+        </div>
+        <br>
+
+        <div class="filter-group">
+            <label><strong>Durată</strong></label>
+            <div class="checkbox-group" style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                <label class="filter-item"><input type="checkbox" class="filter-dur" value="1-3 ore"> 1-3 ore</label>
+                <label class="filter-item"><input type="checkbox" class="filter-dur" value="Jumatate"> Jumătate de zi</label>
+                <label class="filter-item"><input type="checkbox" class="filter-dur" value="Zi"> O zi întreagă</label>
+            </div>
+        </div>
+        <br>
+
+        <div class="filter-group">
+            <label><strong>Preț maxim / persoană</strong></label>
+            <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px;">
+                <input type="range" id="priceRange" min="50" max="1000" step="50" value="1000" style="flex: 1; accent-color: #0057ff;">
+                <div style="display: flex; align-items: center; border: 1px solid #ccc; border-radius: 6px; padding: 2px 8px;">
+                    <input type="number" id="priceInput" min="50" max="1000" step="50" value="1000" style="width: 50px; border: none; outline: none; font-weight: bold; text-align: center;">
+                    <span style="color: #666; font-size: 14px; margin-left: 5px;">RON</span>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <button class="btn-search" onclick="applyFilters()" style="width: 100%; padding: 12px; border-radius: 8px; background-color: #0057ff; color: white; border: none; font-weight: bold; cursor: pointer;">Aplică filtre</button>
+    </aside>
+
+    <main class="results-list">
+        <h2 class="results-header" id="results-count">Se încarcă activitățile...</h2>
+        <div id="items-container"></div>
+    </main>
+</div>
+
+@section Scripts {
+    <script id="data-activitati" type="application/json">
+        @Html.Raw(jsonActivitati)
+    </script>
+    <script>
+        const activitiesData = JSON.parse(document.getElementById('data-activitati').textContent);
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const range = document.getElementById('priceRange');
+            const input = document.getElementById('priceInput');
+
+            if(range && input) {
+                range.addEventListener('input', () => input.value = range.value);
+                input.addEventListener('change', () => range.value = input.value);
+            }
+
+            applyFilters();
+        });
+
+        function applyFilters() {
+            const container = document.getElementById('items-container');
+            const header = document.getElementById('results-count');
+
+            if(!container || !header) return;
+
+            const selCats = Array.from(document.querySelectorAll('.filter-cat:checked')).map(c => c.value);
+            const selDurs = Array.from(document.querySelectorAll('.filter-dur:checked')).map(c => c.value);
+            const maxPrice = parseInt(document.getElementById('priceInput').value) || 1000;
+
+            const filtered = activitiesData.filter(a => {
+                if (a.price > maxPrice) return false;
+
+                let aCat = a.cat || "";
+                if (selCats.length > 0 && !selCats.some(c => aCat.includes(c))) return false;
+
+                let aDur = a.dur || "";
+                if (selDurs.length > 0 && !selDurs.some(d => aDur.includes(d))) return false;
+
+                return true;
+            });
+
+            header.innerText = `Am găsit ${filtered.length} activități pentru tine`;
+            container.innerHTML = "";
+
+            if(filtered.length === 0) {
+                container.innerHTML = "<p style='color:#666;'>Nicio activitate nu corespunde selecției.</p>"; return;
+            }
+
+            filtered.forEach(function(a) {
+                var numeParam = encodeURIComponent(a.name);
+
+                container.innerHTML +=
+                    '<div class="hotel-card">' +
+
+                        '<div class="img-hover-wrapper">' +
+                            '<div class="icon-layer" style="background: linear-gradient(135deg, ' + a.color + ', #222);">' +
+                                '<i class="fa-solid ' + a.icon + '" style="font-size: 60px;"></i>' +
+                            '</div>' +
+                            // AICI E PLASA DE SIGURANȚĂ: onerror înlocuiește automat imaginea moartă cu una de siguranță
+                            '<img class="photo-layer" src="' + a.image + '" alt="' + a.name + '" onerror="this.onerror=null; this.src=\'https://via.placeholder.com/600x400/f8f9fa/333333?text=Imagine+Indisponibila\';" />' +
+                        '</div>' +
+
+                        '<div class="hotel-info" style="flex-grow: 1;">' +
+                            '<div>' +
+                                '<div class="hotel-title-row">' +
+                                    '<h3 class="hotel-title">' + a.name + '</h3>' +
+                                    '<span class="badge-rating" style="background-color: #ffb400; color:black; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Recomandat</span>' +
+                                '</div>' +
+                                '<p class="hotel-desc"><i class="fa-solid fa-location-dot"></i> ' + a.loc + ' | <i class="fa-regular fa-clock"></i> Categorie: ' + a.cat + '</p>' +
+                                '<div class="perks"><i class="fa-solid fa-ticket"></i> ' + a.perk + '</div>' +
+                            '</div>' +
+                            '<div class="hotel-bottom-row">' +
+                                '<div class="price-box">' +
+                                    '<div class="price-value">' + a.price + ' RON</div>' +
+                                    '<div class="price-sub">per persoană</div>' +
+                                '</div>' +
+                                
+                                '<a href="/Rezervari/Checkout?tip=Activitate&id=' + a.id + '&nume=' + numeParam + '&pret=' + a.price + '" class="btn-details" style="box-shadow: 0 4px 6px rgba(0,87,255,0.2);">Cumpără Bilet</a>' +
+                            '</div>' +
+                        '</div>' +
+                    '</div>';
+            });
+        }
+    </script>
+}

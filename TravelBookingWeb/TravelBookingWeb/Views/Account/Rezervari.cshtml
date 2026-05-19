@@ -1,0 +1,190 @@
+﻿@model IEnumerable<TravelBookingWeb.Models.Rezervare>
+@using Microsoft.AspNetCore.Identity
+@using TravelBookingWeb.Models
+@inject UserManager<ApplicationUser> UserManager
+@{
+    ViewData["Title"] = "Rezervările Mele";
+
+    // Extragem user-ul real din baza de date
+    var currentUser = await UserManager.GetUserAsync(User);
+
+    // Setăm numele complet
+    var numeComplet = currentUser != null ? $"{currentUser.Nume} {currentUser.Prenume}".Trim() : (User.Identity.Name ?? "Utilizator");
+    if (string.IsNullOrWhiteSpace(numeComplet)) numeComplet = User.Identity.Name;
+
+    var initale = "";
+    if (!string.IsNullOrWhiteSpace(numeComplet))
+    {
+        initale = string.Join("", numeComplet.Split(' ', StringSplitOptions.RemoveEmptyEntries).Select(n => n[0])).ToUpper();
+        if (initale.Length > 2) initale = initale.Substring(0, 2);
+    }
+}
+
+<div class="container mt-5 mb-5 d-flex">
+    <div class="card border-0 shadow-sm rounded-3 me-4" style="width: 280px; height: fit-content;">
+        <div class="card-body text-center pt-4">
+
+            @if (!string.IsNullOrEmpty(currentUser?.ImagineProfil))
+            {
+                <img src="@currentUser.ImagineProfil" alt="Profil" class="rounded-circle mb-3 mx-auto shadow-sm" style="width: 90px; height: 90px; object-fit: cover;">
+            }
+            else
+            {
+                <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center mx-auto mb-3 fw-bold fs-2" style="width: 90px; height: 90px;">@initale</div>
+            }
+
+            <h5 class="fw-bold mb-1">@numeComplet</h5>
+            <p class="text-muted small mb-0">@currentUser?.Email</p>
+        </div>
+        <div class="list-group list-group-flush border-top">
+            <a href="/Account/Profil" class="list-group-item list-group-item-action py-3 text-muted"><i class="fa-solid fa-user me-2"></i> Date Personale</a>
+            <a href="/Account/Securitate" class="list-group-item list-group-item-action py-3 text-muted"><i class="fa-solid fa-shield-halved me-2"></i> Securitate și Parolă</a>
+            <a href="/Account/Rezervari" class="list-group-item list-group-item-action active fw-bold py-3"><i class="fa-solid fa-suitcase-rolling me-2"></i> Rezervările Mele</a>
+            <a href="/Account/Logout" class="list-group-item list-group-item-action py-3 text-danger fw-bold"><i class="fa-solid fa-right-from-bracket me-2"></i> Deconectare</a>
+        </div>
+    </div>
+
+    <div class="flex-grow-1 w-100">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="text-dark fw-bold"><i class="fa-solid fa-suitcase-rolling text-primary"></i> Istoric Rezervări</h2>
+        </div>
+        <hr />
+
+        @if (!Model.Any())
+        {
+            <div class="alert alert-info mt-4 shadow-sm border-0">
+                Nu ai nicio rezervare momentan. Începe să explorezi destinațiile noastre!
+                <a href="/Home/Rezultate" class="btn btn-primary ms-3 fw-bold">Vezi Oferte</a>
+            </div>
+        }
+        else
+        {
+            <ul class="nav nav-pills mb-4" id="rezervari-tabs">
+                <li class="nav-item me-2">
+                    <a class="nav-link active shadow-sm" href="#" data-filter="Toate">Toate</a>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link bg-white text-success shadow-sm border" href="#" data-filter="Plătită"><i class="fa-solid fa-check"></i> Plătite</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-white text-danger shadow-sm border" href="#" data-filter="Anulată"><i class="fa-solid fa-xmark"></i> Anulate</a>
+                </li>
+            </ul>
+
+            <div class="card border-0 shadow-sm rounded-3">
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle mb-0" id="tabelRezervari">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th class="ps-4">Perioadă & Durată</th>
+                                    <th>Serviciu & Facilități</th>
+                                    <th>Plată</th>
+                                    <th>Status</th>
+                                    <th class="text-end pe-4">Acțiuni</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var r in Model)
+                                {
+                                    var durata = (r.DataSfarsit - r.DataInceput).Days;
+                                    if (durata < 1) durata = 1;
+
+                                    <tr data-status="@r.StatusPlata">
+                                        <td class="ps-4">
+                                            <div class="fw-bold text-dark">
+                                                @r.DataInceput.ToString("dd.MM.yyyy")
+                                                <i class="fa-solid fa-arrow-right mx-1 text-muted"></i>
+                                                @r.DataSfarsit.ToString("dd.MM.yyyy")
+                                            </div>
+                                            <small class="text-muted"><i class="fa-regular fa-clock"></i> @durata zile</small>
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-secondary mb-1">@r.TipServiciu</span><br />
+                                            <strong>@r.DetaliiServiciu</strong><br />
+                                            <small class="text-muted">@r.Facilitati</small>
+                                        </td>
+                                        <td>
+                                            <div class="text-primary fw-bold">@r.PretTotal RON</div>
+                                            <small class="text-muted">
+                                                <i class="fa-solid @(r.MetodaPlata == "Card" ? "fa-credit-card" : "fa-money-bill")"></i> @r.MetodaPlata
+                                            </small>
+                                        </td>
+                                        <td>
+                                            @if (r.StatusPlata == "Plătită")
+                                            {
+                                                <span class="badge bg-success"><i class="fa-solid fa-check"></i> Plătită</span>
+                                            }
+                                            else if (r.StatusPlata == "Anulată")
+                                            {
+                                                <span class="badge bg-danger"><i class="fa-solid fa-xmark"></i> Anulată</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge bg-warning text-dark">@r.StatusPlata</span>
+                                            }
+                                        </td>
+                                        <td class="text-end pe-4">
+                                            @if (r.StatusPlata != "Anulată")
+                                            {
+                                                <a href="/Account/EditeazaRezervare/@r.Id" class="btn btn-sm btn-outline-primary fw-bold mb-1 w-100">
+                                                    <i class="fa-solid fa-pen"></i> Modifică
+                                                </a>
+                                                <form asp-controller="Account" asp-action="AnuleazaRezervare" method="post" onsubmit="return confirm('Sigur vrei să anulezi?');">
+                                                    <input type="hidden" name="id" value="@r.Id" />
+                                                    <button type="submit" class="btn btn-sm btn-outline-danger fw-bold w-100">
+                                                        <i class="fa-solid fa-ban"></i> Anulează
+                                                    </button>
+                                                </form>
+                                            }
+                                            else
+                                            {
+                                                <form asp-controller="Account" asp-action="ReiaRezervare" method="post">
+                                                    <input type="hidden" name="id" value="@r.Id" />
+                                                    <button type="submit" class="btn btn-sm btn-success fw-bold shadow-sm w-100">
+                                                        <i class="fa-solid fa-rotate-right"></i> Reia
+                                                    </button>
+                                                </form>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.querySelectorAll('#rezervari-tabs .nav-link').forEach(tab => {
+            tab.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Resetare stiluri tab-uri
+                document.querySelectorAll('#rezervari-tabs .nav-link').forEach(t => {
+                    t.classList.remove('active', 'text-white');
+                    t.classList.add('bg-white');
+                });
+
+                // Activare tab curent
+                this.classList.add('active', 'text-white');
+                this.classList.remove('bg-white');
+
+                let filter = this.getAttribute('data-filter');
+                let rows = document.querySelectorAll('#tabelRezervari tbody tr');
+
+                rows.forEach(row => {
+                    if (filter === 'Toate' || row.getAttribute('data-status') === filter) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+}

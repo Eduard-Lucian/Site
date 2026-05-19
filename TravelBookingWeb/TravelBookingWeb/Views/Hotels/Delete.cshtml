@@ -1,0 +1,33 @@
+﻿@model TravelBookingWeb.Models.Hotel
+
+@{
+    ViewData["Title"] = "Șterge Hotel";
+}
+
+<div class="container mt-4">
+    <div class="alert alert-danger">
+        <h3>Ești sigur că vrei să ștergi acest hotel?</h3>
+        <p>Atenție: Această acțiune este ireversibilă!</p>
+    </div>
+    
+    <div class="card p-4 shadow-sm">
+        <h4>Detalii Proprietate:</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-3">Nume Hotel:</dt>
+            <dd class="col-sm-9"><strong>@Model.Nume</strong></dd>
+            
+            <dt class="col-sm-3">Descriere:</dt>
+            <dd class="col-sm-9">@Model.Descriere</dd>
+            
+            <dt class="col-sm-3">Stele / Rating:</dt>
+            <dd class="col-sm-9">@Model.Stele stele | @Model.Rating scor</dd>
+        </dl>
+        
+        <form asp-action="Delete" class="mt-3">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Confirmă Ștergerea" class="btn btn-danger" />
+            <a asp-action="Index" class="btn btn-secondary ms-2">Anulează și întoarce-te</a>
+        </form>
+    </div>
+</div>

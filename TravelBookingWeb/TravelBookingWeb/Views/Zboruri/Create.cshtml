@@ -1,0 +1,104 @@
+﻿@model TravelBookingWeb.Models.Zbor
+
+@{
+    ViewData["Title"] = "Adaugă Zbor";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm border-0 rounded-3 p-4">
+        <h2 class="fw-bold text-dark"><i class="fa-solid fa-plane-circle-check text-primary me-2"></i>Adaugă Zbor Nou</h2>
+        <hr />
+        <div class="row">
+            <div class="col-md-8">
+                <form asp-action="Create" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    
+                    <div class="form-group mb-3">
+                        <label asp-for="CompanieAeriana" class="control-label fw-bold">Companie Aeriană</label>
+                        <input asp-for="CompanieAeriana" class="form-control" placeholder="Ex: TAROM, Wizz Air, Lufthansa" required />
+                        <span asp-validation-for="CompanieAeriana" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <label asp-for="Escale" class="control-label fw-bold">Escale / Tip Zbor</label>
+                                <input asp-for="Escale" class="form-control" list="optiuniEscale" placeholder="Ex: Direct" required />
+                                <datalist id="optiuniEscale">
+                                    <option value="Direct"></option>
+                                    <option value="1 Escală"></option>
+                                    <option value="2 Escale"></option>
+                                    <option value="Tehnică"></option>
+                                </datalist>
+                                <span asp-validation-for="Escale" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <label asp-for="Durata" class="control-label fw-bold">Durată Estimată</label>
+                                <input asp-for="Durata" class="form-control" placeholder="Ex: 2h 45m" required />
+                                <span asp-validation-for="Durata" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                        <label asp-for="Pret" class="control-label fw-bold">Preț bilet (RON)</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white text-success fw-bold">RON</span>
+                            <input asp-for="Pret" type="number" step="0.01" class="form-control" placeholder="0.00" required />
+                        </div>
+                        <span asp-validation-for="Pret" class="text-danger"></span>
+                    </div>
+
+                    <!-- ÎNLOCUIRE ID: Folosim DestinatieText + Datalist conform cerinței -->
+                    <div class="form-group mb-4">
+                        <label class="control-label fw-bold">Destinație (Oraș, Țară)</label>
+                        <input asp-for="DestinatieText" class="form-control" list="listaDestinatii"
+                               placeholder="-- Tastează orașul sau alege din sugestii --" required autocomplete="off">
+                        
+                        <datalist id="listaDestinatii">
+                            @if (ViewBag.Destinatii != null)
+                            {
+                                foreach (var item in (SelectList)ViewBag.Destinatii)
+                                {
+                                    <option value="@item.Text"></option>
+                                }
+                            }
+                        </datalist>
+                        <span asp-validation-for="DestinatieText" class="text-danger"></span>
+                        <small class="text-muted italic">Dacă orașul nu există în listă, acesta va fi creat automat.</small>
+                    </div>
+                    
+                    <div class="form-group mt-4">
+                        <button type="submit" class="btn btn-primary px-4 fw-bold" style="background-color: #0057ff;">
+                            <i class="fa-solid fa-cloud-upload me-1"></i> Salvează Zborul
+                        </button>
+                        <a asp-action="Index" class="btn btn-outline-secondary ms-2 fw-bold">
+                            <i class="fa-solid fa-arrow-rotate-left me-1"></i> Înapoi la listă
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    
+    <script>
+        // curățăm câmpul la focus pentru a vedea toate opțiunile din datalist
+        document.getElementById('DestinatieText').addEventListener('focus', function() {
+            this.dataset.oldVal = this.value;
+            this.value = '';
+        });
+        document.getElementById('DestinatieText').addEventListener('blur', function() {
+            if(this.value.trim() === '') {
+                this.value = this.dataset.oldVal || '';
+            }
+        });
+    </script>
+}

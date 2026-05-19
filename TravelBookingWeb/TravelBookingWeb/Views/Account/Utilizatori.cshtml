@@ -1,0 +1,59 @@
+﻿@model IEnumerable<TravelBookingWeb.Services.UserRoleDto>
+@{
+    ViewData["Title"] = "Gestionare Utilizatori";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4"><i class="fa-solid fa-users text-primary"></i> Gestionare Utilizatori</h2>
+
+    <form method="get" action="/Account/Utilizatori" class="mb-4 d-flex">
+        <input type="text" name="cautare" value="@ViewBag.SearchTerm" placeholder="Caută după nume, prenume sau email..." class="form-control me-2" style="max-width: 400px;">
+        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-search"></i> Caută</button>
+        <a href="/Account/Utilizatori" class="btn btn-outline-secondary ms-2">Reset</a>
+    </form>
+
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered shadow-sm bg-white">
+            <thead class="table-dark">
+                <tr>
+                    <th>Nume și Prenume</th>
+                    <th>Email</th>
+                    <th>Telefon</th>
+                    <th>Acțiuni Rol</th>
+                    <th>Editare / Ștergere</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="align-middle fw-bold">@item.User.Nume @item.User.Prenume</td>
+                        <td class="align-middle">@item.User.Email</td>
+                        <td class="align-middle">@item.User.PhoneNumber</td>
+
+                        <td class="align-middle">
+                            <form method="post" action="/Account/SchimbaRol" class="d-flex align-items-center m-0">
+                                <input type="hidden" name="userId" value="@item.User.Id" />
+                                <select name="rolNou" class="form-select form-select-sm me-2" style="width: 120px;" onchange="this.form.submit()">
+                                    <option value="Client" selected="@(item.Role == "Client" ? "selected" : null)">Client</option>
+                                    <option value="Staff" selected="@(item.Role == "Staff" ? "selected" : null)">Staff</option>
+                                    <option value="Admin" selected="@(item.Role == "Admin" ? "selected" : null)">Admin</option>
+                                </select>
+                            </form>
+                        </td>
+
+                        <td class="align-middle">
+                            <div class="d-flex">
+                                <a href="/Account/EditeazaUtilizator/@item.User.Id" class="btn btn-sm btn-primary me-2"><i class="fa-solid fa-pen"></i> Edit</a>
+                                <form method="post" action="/Account/StergeUtilizator" onsubmit="return confirm('Sigur ștergi acest client?');">
+                                    <input type="hidden" name="userId" value="@item.User.Id" />
+                                    <button type="submit" class="btn btn-sm btn-danger"><i class="fa-solid fa-trash"></i></button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

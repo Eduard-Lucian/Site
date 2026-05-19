@@ -1,0 +1,141 @@
+﻿@model TravelBookingWeb.Models.Zbor
+
+@{
+    ViewData["Title"] = "Editează Zborul";
+}
+
+<div class="container mt-5 mb-5">
+    <div class="card shadow-sm border-0 rounded-3 p-4" style="background-color: #f8f9fa;">
+        <h2 class="mb-4">Editează Zborul</h2>
+        <hr />
+
+        <form asp-action="Edit" method="post">
+            <input type="hidden" asp-for="Id" />
+
+            <!-- Companie Aeriană -->
+            <div class="mb-3">
+                <label class="form-label fw-bold">Companie Aeriană</label>
+                <input type="text" asp-for="CompanieAeriana" class="form-control" required>
+            </div>
+
+            <!-- Escale -->
+            <div class="mb-3">
+                <label class="form-label fw-bold">Escale</label>
+                <!-- Am adăugat id="escaleInput" -->
+                <input type="text" asp-for="Escale" id="escaleInput" class="form-control" list="listaEscale" placeholder="Dă click pentru opțiuni sau scrie tu..." required autocomplete="off">
+                <datalist id="listaEscale">
+                    <option value="Direct"></option>
+                    <option value="1 Escală"></option>
+                    <option value="2 Escale"></option>
+                    <option value="1 Escală (Tehnică)"></option>
+                </datalist>
+            </div>
+
+            <!-- Durata -->
+            <div class="mb-3">
+                <label class="form-label fw-bold">Durata</label>
+                <div class="d-flex align-items-center gap-2">
+                    <div class="input-group" style="width: 140px;">
+                        <input type="number" id="oreInput" class="form-control" min="0" max="48" placeholder="Ore" required>
+                        <span class="input-group-text bg-white fw-bold">h</span>
+                    </div>
+                    <div class="input-group" style="width: 140px;">
+                        <input type="number" id="minuteInput" class="form-control" min="0" max="59" placeholder="Min" required>
+                        <span class="input-group-text bg-white fw-bold">m</span>
+                    </div>
+                </div>
+                <input type="hidden" asp-for="Durata" id="durataHidden" />
+            </div>
+
+            <!-- Preț -->
+            <div class="mb-3">
+                <label class="form-label fw-bold">Preț</label>
+                <input type="number" asp-for="Pret" class="form-control" step="0.01" required>
+            </div>
+
+            <!-- Destinație -->
+            <div class="mb-4">
+                <label class="form-label fw-bold">Destinație</label>
+                <!-- Am adăugat id="destinatieInput" -->
+                <input type="text" name="DestinatieText" id="destinatieInput" class="form-control" list="listaDestinatii"
+                       value="@(Model.Destinatie != null ? Model.Destinatie.Oras + ", " + Model.Destinatie.Tara : "")"
+                       placeholder="Alege o destinație populară sau scrie de mână..." required autocomplete="off">
+                <datalist id="listaDestinatii">
+                    <option value="București, România"></option>
+                    <option value="Paris, Franța"></option>
+                    <option value="Roma, Italia"></option>
+                    <option value="Londra, Marea Britanie"></option>
+                    <option value="Madrid, Spania"></option>
+                    <option value="Atena, Grecia"></option>
+                    <option value="Dubai, EAU"></option>
+                    <option value="New York, SUA"></option>
+                    <option value="Viena, Austria"></option>
+                    <option value="Amsterdam, Olanda"></option>
+                </datalist>
+            </div>
+
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-success fw-bold">Salvează Modificările</button>
+                <a asp-action="Index" class="btn btn-secondary">Înapoi la listă</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // --- 1. Logica pentru Săgețile de Durată ---
+            var durataHidden = document.getElementById("durataHidden");
+            var oreInput = document.getElementById("oreInput");
+            var minuteInput = document.getElementById("minuteInput");
+
+            if (durataHidden.value) {
+                var parts = durataHidden.value.split('h');
+                if(parts.length > 1) {
+                    oreInput.value = parts[0].trim();
+                    minuteInput.value = parts[1].replace('m', '').trim();
+                }
+            }
+
+            function updateDurata() {
+                var h = oreInput.value || "0";
+                var m = minuteInput.value || "0";
+                durataHidden.value = h + "h " + m + "m";
+            }
+
+            oreInput.addEventListener("input", updateDurata);
+            minuteInput.addEventListener("input", updateDurata);
+
+
+            // --- 2. TRUCUL MAGIC PENTRU DROPDOWN-URI ---
+            function setupSmartDatalist(inputId) {
+                var input = document.getElementById(inputId);
+                if(!input) return;
+                
+                var oldValue = "";
+
+                // Când dai click în căsuță, ascundem temporar textul ca să apară TOATĂ lista
+                input.addEventListener('focus', function() {
+                    oldValue = this.value;
+                    this.value = '';
+                });
+
+                // Dacă pleci din căsuță fără să fi scris/ales nimic, punem textul vechi la loc
+                input.addEventListener('blur', function() {
+                    if(this.value.trim() === '') {
+                        this.value = oldValue;
+                    }
+                });
+            }
+
+            // Aplicăm trucul pe Escale și Destinații
+            setupSmartDatalist('escaleInput');
+            setupSmartDatalist('destinatieInput');
+        });
+    </script>
+}

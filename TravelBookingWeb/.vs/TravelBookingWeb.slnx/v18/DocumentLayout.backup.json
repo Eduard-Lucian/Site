@@ -1,0 +1,1783 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\services\\activitateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\services\\activitateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\services\\rezervareservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\services\\rezervareservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\repositories\\activitaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\repositories\\activitaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\services\\zborservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\services\\zborservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\services\\hotelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\services\\hotelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\services\\destinatieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\services\\destinatieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\services\\customuserclaimsprincipalfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\services\\customuserclaimsprincipalfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\repositories\\rezervarerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\repositories\\rezervarerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\repositories\\destinatierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\repositories\\destinatierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\services\\iactivitateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\services\\iactivitateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\activitati\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\activitati\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\activitati\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\activitati\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\controllers\\activitaticontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\controllers\\activitaticontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\repositories\\iactivitaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\repositories\\iactivitaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\viewmodels\\activitateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\viewmodels\\activitateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\travelbookingweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\travelbookingweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\models\\activitate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\models\\activitate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\account\\rezervari.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\account\\rezervari.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\account\\securitate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\account\\securitate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\controllers\\hotelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\controllers\\hotelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\controllers\\rezervaricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\controllers\\rezervaricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\account\\editeazautilizator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\account\\editeazautilizator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\account\\utilizatori.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\account\\utilizatori.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\account\\profil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\account\\profil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\rezervari\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\rezervari\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\controllers\\rezervariclientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\controllers\\rezervariclientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\repositories\\inchirierirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\repositories\\inchirierirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\repositories\\iinchirierirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\repositories\\iinchirierirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\services\\inchirieriservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\services\\inchirieriservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\services\\iinchirieriservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\services\\iinchirieriservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\controllers\\inchiriericontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\controllers\\inchiriericontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\controllers\\zboruricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\controllers\\zboruricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\controllers\\clientiserviciicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\controllers\\clientiserviciicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\models\\rezervare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\models\\rezervare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\models\\recenzie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\models\\recenzie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\wwwroot\\js\\filtre.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\wwwroot\\js\\filtre.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\hotels\\oferte.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\hotels\\oferte.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\migrations\\20260516174019_finalarhitecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\migrations\\20260516174019_finalarhitecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\zboruri\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\zboruri\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\zboruri\\oferte.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\zboruri\\oferte.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\inchirieri\\oferte.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\inchirieri\\oferte.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\activitati\\oferte.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\activitati\\oferte.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\hotels\\detaliiclient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\hotels\\detaliiclient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\models\\zbor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\models\\zbor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\services\\izborservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\services\\izborservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\services\\ihotelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\services\\ihotelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\migrations\\20260503044927_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\migrations\\20260503044927_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\migrations\\20260503005700_adaug\u0103proprietateimaginelahotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\migrations\\20260503005700_adaug\u0103proprietateimaginelahotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\migrations\\20260502223159_finalcleansetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\migrations\\20260502223159_finalcleansetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\wwwroot\\css\\rezultate.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\wwwroot\\css\\rezultate.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\wwwroot\\css\\profil.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\wwwroot\\css\\profil.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\wwwroot\\css\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\wwwroot\\css\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\wwwroot\\css\\general.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\wwwroot\\css\\general.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\wwwroot\\css\\detalii.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\wwwroot\\css\\detalii.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\wwwroot\\css\\checkout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\wwwroot\\css\\checkout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\wwwroot\\css\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\wwwroot\\css\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\hotels\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\hotels\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\hotels\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\hotels\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\hotels\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\hotels\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\hotels\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\hotels\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\models\\inchirieri_masini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\models\\inchirieri_masini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\models\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\models\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502215439_InitialFix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502215018_InitialClean.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502205645_SincronizareFinalaActivitati.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502204301_FixNamingActivitate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\activitati\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\activitati\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\activitati\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\activitati\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\zboruri\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\zboruri\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502182153_ReparareAvertismentRating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\repositories\\hotelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\repositories\\hotelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502174924_UpdateHotelFacilitati.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\account\\editeazarezervare.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\account\\editeazarezervare.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502164416_SistemRezervariAvansat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\zboruri\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\zboruri\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\wwwroot\\lib\\bootstrap\\license||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\wwwroot\\lib\\bootstrap\\license||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\zboruri\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\zboruri\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\repositories\\zborrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\repositories\\zborrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\repositories\\izborrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\repositories\\izborrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\hotels\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\hotels\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\repositories\\ihotelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\repositories\\ihotelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\models\\destinatie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\models\\destinatie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\wwwroot\\js\\rezervari.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\wwwroot\\js\\rezervari.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\models\\facilitate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\models\\facilitate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\wwwroot\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\wwwroot\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\views\\home\\info.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\views\\home\\info.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\migrations\\20260516210432_implementareidentityfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\migrations\\20260516210432_implementareidentityfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\migrations\\20260516210124_setareidentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\migrations\\20260516210124_setareidentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|c:\\users\\lucian\\desktop\\proiect-final-paw\\travelbookingweb\\travelbookingweb\\migrations\\20260518000645_fluentapisecuritatecorectat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44A2ED8-A57F-6E66-433A-F6F245842CF2}|TravelBookingWeb\\TravelBookingWeb.csproj|solutionrelative:travelbookingweb\\migrations\\20260518000645_fluentapisecuritatecorectat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HotelService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\HotelService.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Services\\HotelService.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\HotelService.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Services\\HotelService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T09:09:05.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ZborService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\ZborService.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Services\\ZborService.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\ZborService.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Services\\ZborService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T09:39:52.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ActivitateRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\ActivitateRepository.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Repositories\\ActivitateRepository.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\ActivitateRepository.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Repositories\\ActivitateRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvyIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T09:59:53.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ActivitateService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\ActivitateService.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Services\\ActivitateService.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\ActivitateService.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Services\\ActivitateService.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAADwv2IAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T10:00:57.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RezervareService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\RezervareService.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Services\\RezervareService.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\RezervareService.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Services\\RezervareService.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAAEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T21:28:46.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\AuthService.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T20:33:37.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DestinatieService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\DestinatieService.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Services\\DestinatieService.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\DestinatieService.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Services\\DestinatieService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvx8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T18:48:28.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomUserClaimsPrincipalFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\CustomUserClaimsPrincipalFactory.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Services\\CustomUserClaimsPrincipalFactory.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\CustomUserClaimsPrincipalFactory.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Services\\CustomUserClaimsPrincipalFactory.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T23:48:46.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RezervareRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\RezervareRepository.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Repositories\\RezervareRepository.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\RezervareRepository.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Repositories\\RezervareRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T21:28:05.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DestinatieRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\DestinatieRepository.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Repositories\\DestinatieRepository.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\DestinatieRepository.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Repositories\\DestinatieRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvyEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T18:47:04.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAowJ8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T18:51:49.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:39:47.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAADwvz8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:40:54.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IActivitateService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\IActivitateService.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Services\\IActivitateService.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\IActivitateService.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Services\\IActivitateService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T10:00:28.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 110,
+              "Title": "20260518000645_FluentApiSecuritateCorectat.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260518000645_FluentApiSecuritateCorectat.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Migrations\\20260518000645_FluentApiSecuritateCorectat.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260518000645_FluentApiSecuritateCorectat.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Migrations\\20260518000645_FluentApiSecuritateCorectat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T00:06:45.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Activitati\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Activitati\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Activitati\\Edit.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Activitati\\Edit.cshtml",
+              "ViewState": "AgIAAI4AAAAAAAAAAADwv60AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-19T10:03:45.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Activitati\\Create.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Activitati\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Activitati\\Create.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Activitati\\Create.cshtml",
+              "ViewState": "AgIAAIoAAAAAAAAAAADwv6kAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-19T10:03:09.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAADwv1IAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T19:36:41.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ActivitatiController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\ActivitatiController.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Controllers\\ActivitatiController.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\ActivitatiController.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Controllers\\ActivitatiController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAADwv08AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T10:01:36.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IActivitateRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\IActivitateRepository.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Repositories\\IActivitateRepository.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\IActivitateRepository.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Repositories\\IActivitateRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T09:59:22.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ActivitateViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\ViewModels\\ActivitateViewModel.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\ViewModels\\ActivitateViewModel.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\ViewModels\\ActivitateViewModel.cs",
+              "RelativeToolTip": "TravelBookingWeb\\ViewModels\\ActivitateViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvx8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T23:53:24.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Activitate.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Activitate.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Models\\Activitate.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Activitate.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Models\\Activitate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T18:59:22.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEoAAAAAAAAAAADwv2kAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:22:13.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Program.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Program.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T19:17:25.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TravelBookingWeb.csproj",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\TravelBookingWeb.csproj",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\TravelBookingWeb.csproj",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\TravelBookingWeb.csproj",
+              "RelativeToolTip": "TravelBookingWeb\\TravelBookingWeb.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-29T19:30:11.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Rezervari.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Account\\Rezervari.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Account\\Rezervari.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Account\\Rezervari.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Account\\Rezervari.cshtml",
+              "ViewState": "AgIAAJ4AAAAAAAAAAADwv70AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:37:39.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Securitate.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Account\\Securitate.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Account\\Securitate.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Account\\Securitate.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Account\\Securitate.cshtml",
+              "ViewState": "AgIAAFYAAAAAAAAAAADwv3UAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:38:47.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "HotelsController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\HotelsController.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Controllers\\HotelsController.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\HotelsController.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Controllers\\HotelsController.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAADwv3MAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T20:21:28.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Data\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Data\\DbSeeder.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Data\\DbSeeder.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Data\\DbSeeder.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBAAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T20:07:29.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RezervariController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\RezervariController.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Controllers\\RezervariController.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\RezervariController.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Controllers\\RezervariController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvzkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T16:58:27.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EditeazaUtilizator.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Account\\EditeazaUtilizator.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Account\\EditeazaUtilizator.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Account\\EditeazaUtilizator.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Account\\EditeazaUtilizator.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvy4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-17T22:30:07.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Utilizatori.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Account\\Utilizatori.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Account\\Utilizatori.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Account\\Utilizatori.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Account\\Utilizatori.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAADwvzoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-02T00:29:08.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Profil.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Account\\Profil.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Account\\Profil.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Account\\Profil.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Account\\Profil.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:35:42.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvzEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T18:51:15.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAHcAAAAAAAAAAADwv5YAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:25:07.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Rezervari\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Rezervari\\Checkout.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Rezervari\\Checkout.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Rezervari\\Checkout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:30:32.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RezervariClientController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\RezervariClientController.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Controllers\\RezervariClientController.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\RezervariClientController.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Controllers\\RezervariClientController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T19:28:19.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IInchirieriRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\IInchirieriRepository.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Repositories\\IInchirieriRepository.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\IInchirieriRepository.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Repositories\\IInchirieriRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T19:54:00.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\appsettings.json",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\appsettings.json",
+              "RelativeToolTip": "TravelBookingWeb\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-29T19:24:52.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "InchirieriRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\InchirieriRepository.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Repositories\\InchirieriRepository.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\InchirieriRepository.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Repositories\\InchirieriRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvx4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T12:48:18.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IInchirieriService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\IInchirieriService.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Services\\IInchirieriService.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\IInchirieriService.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Services\\IInchirieriService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T19:45:43.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ZboruriController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\ZboruriController.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Controllers\\ZboruriController.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\ZboruriController.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Controllers\\ZboruriController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAADwv2QAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T09:41:26.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "InchirieriService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\InchirieriService.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Services\\InchirieriService.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\InchirieriService.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Services\\InchirieriService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T12:48:53.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ClientiServiciiController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\ClientiServiciiController.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Controllers\\ClientiServiciiController.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\ClientiServiciiController.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Controllers\\ClientiServiciiController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvy4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T19:37:13.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "InchirieriController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\InchirieriController.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Controllers\\InchirieriController.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Controllers\\InchirieriController.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Controllers\\InchirieriController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAADwv0UAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T16:06:26.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 109,
+              "Title": "20260516210124_SetareIdentity.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260516210124_SetareIdentity.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Migrations\\20260516210124_SetareIdentity.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260516210124_SetareIdentity.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Migrations\\20260516210124_SetareIdentity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T21:01:24.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 108,
+              "Title": "20260516210432_ImplementareIdentityFinal.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260516210432_ImplementareIdentityFinal.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Migrations\\20260516210432_ImplementareIdentityFinal.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260516210432_ImplementareIdentityFinal.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Migrations\\20260516210432_ImplementareIdentityFinal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T21:04:32.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Rezervare.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Rezervare.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Models\\Rezervare.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Rezervare.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Models\\Rezervare.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T19:43:24.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Recenzie.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Recenzie.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Models\\Recenzie.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Recenzie.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Models\\Recenzie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T19:00:12.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T20:32:01.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "filtre.js",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\js\\filtre.js",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\wwwroot\\js\\filtre.js",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\js\\filtre.js",
+              "RelativeToolTip": "TravelBookingWeb\\wwwroot\\js\\filtre.js",
+              "ViewState": "AgIAAEgAAAAAAAAAAADwv2EAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-29T19:19:18.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Oferte.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Hotels\\Oferte.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Hotels\\Oferte.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Hotels\\Oferte.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Hotels\\Oferte.cshtml",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAWwGwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:28:28.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Zboruri\\Create.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Zboruri\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Zboruri\\Create.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Zboruri\\Create.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAIBJwGcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-19T09:43:09.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Oferte.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Zboruri\\Oferte.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Zboruri\\Oferte.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Zboruri\\Oferte.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Zboruri\\Oferte.cshtml",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAiwJAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:32:57.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Oferte.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Inchirieri\\Oferte.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Inchirieri\\Oferte.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Inchirieri\\Oferte.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Inchirieri\\Oferte.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAADwv5QAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:31:46.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "20260516174019_FinalArhitecture.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260516174019_FinalArhitecture.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Migrations\\20260516174019_FinalArhitecture.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260516174019_FinalArhitecture.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Migrations\\20260516174019_FinalArhitecture.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T17:40:19.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Oferte.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Activitati\\Oferte.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Activitati\\Oferte.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Activitati\\Oferte.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Activitati\\Oferte.cshtml",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAmwNgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:33:59.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "DetaliiClient.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Hotels\\DetaliiClient.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Hotels\\DetaliiClient.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Hotels\\DetaliiClient.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Hotels\\DetaliiClient.cshtml",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAmwI0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:29:02.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Zbor.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Zbor.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Models\\Zbor.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Zbor.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Models\\Zbor.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvyEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T19:01:11.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Hotel.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Hotel.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Models\\Hotel.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Hotel.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Models\\Hotel.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAADwvy0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T18:57:58.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "IZborService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\IZborService.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Services\\IZborService.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\IZborService.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Services\\IZborService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T09:39:28.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "IHotelService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\IHotelService.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Services\\IHotelService.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Services\\IHotelService.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Services\\IHotelService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T09:08:38.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T05:09:27.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "20260503005700_Adaug\u0103ProprietateImagineLaHotel.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260503005700_Adaug\u0103ProprietateImagineLaHotel.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Migrations\\20260503005700_Adaug\u0103ProprietateImagineLaHotel.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260503005700_Adaug\u0103ProprietateImagineLaHotel.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Migrations\\20260503005700_Adaug\u0103ProprietateImagineLaHotel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T00:57:00.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "20260502223159_FinalCleanSetup.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502223159_FinalCleanSetup.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Migrations\\20260502223159_FinalCleanSetup.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502223159_FinalCleanSetup.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Migrations\\20260502223159_FinalCleanSetup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T22:31:59.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "20260503044927_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260503044927_InitialCreate.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Migrations\\20260503044927_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260503044927_InitialCreate.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Migrations\\20260503044927_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T04:49:27.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "TravelBookingWeb\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-04T05:07:37.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "rezultate.css",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\rezultate.css",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\wwwroot\\css\\rezultate.css",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\rezultate.css",
+              "RelativeToolTip": "TravelBookingWeb\\wwwroot\\css\\rezultate.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-04T05:07:35.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "profil.css",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\profil.css",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\wwwroot\\css\\profil.css",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\profil.css",
+              "RelativeToolTip": "TravelBookingWeb\\wwwroot\\css\\profil.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-04T05:07:34.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "navbar.css",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\navbar.css",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\wwwroot\\css\\navbar.css",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\navbar.css",
+              "RelativeToolTip": "TravelBookingWeb\\wwwroot\\css\\navbar.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-04T05:07:32.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "home.css",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\home.css",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\wwwroot\\css\\home.css",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\home.css",
+              "RelativeToolTip": "TravelBookingWeb\\wwwroot\\css\\home.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-04T05:07:28.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "general.css",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\general.css",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\wwwroot\\css\\general.css",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\general.css",
+              "RelativeToolTip": "TravelBookingWeb\\wwwroot\\css\\general.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-04T05:07:27.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "detalii.css",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\detalii.css",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\wwwroot\\css\\detalii.css",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\detalii.css",
+              "RelativeToolTip": "TravelBookingWeb\\wwwroot\\css\\detalii.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-04T05:07:26.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "checkout.css",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\checkout.css",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\wwwroot\\css\\checkout.css",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\checkout.css",
+              "RelativeToolTip": "TravelBookingWeb\\wwwroot\\css\\checkout.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-04T05:07:24.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "auth.css",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\auth.css",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\wwwroot\\css\\auth.css",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\css\\auth.css",
+              "RelativeToolTip": "TravelBookingWeb\\wwwroot\\css\\auth.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-29T19:19:45.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Hotels\\Index.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Hotels\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Hotels\\Index.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Hotels\\Index.cshtml",
+              "ViewState": "AgIAAGUBAAAAAAAAAADwv34BAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-19T09:15:54.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Hotels\\Create.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Hotels\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Hotels\\Create.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Hotels\\Create.cshtml",
+              "ViewState": "AgIAAH8AAAAAAAAAAADwv6AAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-19T09:16:15.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Hotels\\Details.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Hotels\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Hotels\\Details.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Hotels\\Details.cshtml",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAmwNkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-03T00:48:22.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Hotels\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Hotels\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Hotels\\Edit.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Hotels\\Edit.cshtml",
+              "ViewState": "AgIAAFgAAAAAAAAAAADwv2kAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-19T09:16:30.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "Inchirieri_Masini.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Inchirieri_Masini.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Models\\Inchirieri_Masini.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Inchirieri_Masini.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Models\\Inchirieri_Masini.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T18:59:47.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "Camera.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Camera.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Models\\Camera.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Camera.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Models\\Camera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T18:58:30.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "20260502215439_InitialFix.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502215439_InitialFix.cs",
+              "RelativeDocumentMoniker": "..\\..\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502215439_InitialFix.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502215439_InitialFix.cs",
+              "RelativeToolTip": "..\\..\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502215439_InitialFix.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T21:54:39.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "20260502215018_InitialClean.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502215018_InitialClean.cs",
+              "RelativeDocumentMoniker": "..\\..\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502215018_InitialClean.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502215018_InitialClean.cs",
+              "RelativeToolTip": "..\\..\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502215018_InitialClean.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T21:50:18.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "20260502205645_SincronizareFinalaActivitati.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502205645_SincronizareFinalaActivitati.cs",
+              "RelativeDocumentMoniker": "..\\..\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502205645_SincronizareFinalaActivitati.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502205645_SincronizareFinalaActivitati.cs",
+              "RelativeToolTip": "..\\..\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502205645_SincronizareFinalaActivitati.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T20:56:45.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "20260502204301_FixNamingActivitate.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502204301_FixNamingActivitate.cs",
+              "RelativeDocumentMoniker": "..\\..\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502204301_FixNamingActivitate.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502204301_FixNamingActivitate.cs",
+              "RelativeToolTip": "..\\..\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502204301_FixNamingActivitate.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T20:43:02.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Zboruri\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Zboruri\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Zboruri\\Edit.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Zboruri\\Edit.cshtml",
+              "ViewState": "AgIAAG0AAAAAAAAAAADwv4wAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-19T09:43:39.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Activitati\\Delete.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Activitati\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Activitati\\Delete.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Activitati\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-19T10:04:12.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Activitati\\Index.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Activitati\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Activitati\\Index.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Activitati\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAADwvz8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-19T10:02:34.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "20260502182153_ReparareAvertismentRating.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502182153_ReparareAvertismentRating.cs",
+              "RelativeDocumentMoniker": "..\\..\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502182153_ReparareAvertismentRating.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502182153_ReparareAvertismentRating.cs",
+              "RelativeToolTip": "..\\..\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502182153_ReparareAvertismentRating.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T18:21:54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "20260502174924_UpdateHotelFacilitati.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502174924_UpdateHotelFacilitati.cs",
+              "RelativeDocumentMoniker": "..\\..\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502174924_UpdateHotelFacilitati.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502174924_UpdateHotelFacilitati.cs",
+              "RelativeToolTip": "..\\..\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502174924_UpdateHotelFacilitati.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T17:49:24.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "HotelRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\HotelRepository.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Repositories\\HotelRepository.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\HotelRepository.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Repositories\\HotelRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAADgvxkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T09:07:25.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "EditeazaRezervare.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Account\\EditeazaRezervare.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Account\\EditeazaRezervare.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Account\\EditeazaRezervare.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Account\\EditeazaRezervare.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvzkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-02T16:51:33.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "20260502164416_SistemRezervariAvansat.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502164416_SistemRezervariAvansat.cs",
+              "RelativeDocumentMoniker": "..\\..\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502164416_SistemRezervariAvansat.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502164416_SistemRezervariAvansat.cs",
+              "RelativeToolTip": "..\\..\\Paw-2 - Copie - Copie\\TravelBookingWeb\\TravelBookingWeb\\Migrations\\20260502164416_SistemRezervariAvansat.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T16:44:16.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Zboruri\\Index.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Zboruri\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Zboruri\\Index.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Zboruri\\Index.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAADwv1MAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-19T09:42:40.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T19:20:11.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "favicon.ico - Icon [32x32, 32 bit, BMP]",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\favicon.ico",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\wwwroot\\favicon.ico",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\favicon.ico - Icon [32x32, 32 bit, BMP]",
+              "RelativeToolTip": "TravelBookingWeb\\wwwroot\\favicon.ico - Icon [32x32, 32 bit, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2026-05-01T15:03:02.142Z",
+              "EditorCaption": " - Icon [32x32, 32 bit, BMP]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Properties\\launchSettings.json",
+              "RelativeToolTip": "TravelBookingWeb\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-01T15:03:34.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "LICENSE",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\lib\\bootstrap\\LICENSE",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\wwwroot\\lib\\bootstrap\\LICENSE",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\lib\\bootstrap\\LICENSE",
+              "RelativeToolTip": "TravelBookingWeb\\wwwroot\\lib\\bootstrap\\LICENSE",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-01T16:54:14.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "bootstrap-grid.css",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+              "RelativeToolTip": "TravelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-01T16:54:22.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "bootstrap-reboot.css",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+              "RelativeToolTip": "TravelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-01T16:54:29.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Zboruri\\Delete.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Zboruri\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Zboruri\\Delete.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Zboruri\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-19T09:44:10.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "ZborRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\ZborRepository.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Repositories\\ZborRepository.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\ZborRepository.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Repositories\\ZborRepository.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAADwvzIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T09:38:59.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "IZborRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\IZborRepository.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Repositories\\IZborRepository.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\IZborRepository.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Repositories\\IZborRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T09:38:23.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 100,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Hotels\\Delete.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Hotels\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Hotels\\Delete.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Hotels\\Delete.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAADwvwcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-19T09:16:59.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 101,
+              "Title": "IHotelRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\IHotelRepository.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Repositories\\IHotelRepository.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Repositories\\IHotelRepository.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Repositories\\IHotelRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T09:06:17.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 102,
+              "Title": "Destinatie.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Destinatie.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Models\\Destinatie.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Destinatie.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Models\\Destinatie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T18:57:30.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 103,
+              "Title": "rezervari.js",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\js\\rezervari.js",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\wwwroot\\js\\rezervari.js",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\js\\rezervari.js",
+              "RelativeToolTip": "TravelBookingWeb\\wwwroot\\js\\rezervari.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-29T19:19:22.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 104,
+              "Title": "Facilitate.cs",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Facilitate.cs",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Models\\Facilitate.cs",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Models\\Facilitate.cs",
+              "RelativeToolTip": "TravelBookingWeb\\Models\\Facilitate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T18:58:55.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 105,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:24:30.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 106,
+              "Title": "main.js",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\js\\main.js",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\wwwroot\\js\\main.js",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\wwwroot\\js\\main.js",
+              "RelativeToolTip": "TravelBookingWeb\\wwwroot\\js\\main.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-29T19:19:20.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 107,
+              "Title": "Info.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Home\\Info.cshtml",
+              "RelativeDocumentMoniker": "TravelBookingWeb\\Views\\Home\\Info.cshtml",
+              "ToolTip": "C:\\Users\\Lucian\\Desktop\\Proiect-Final-Paw\\TravelBookingWeb\\TravelBookingWeb\\Views\\Home\\Info.cshtml",
+              "RelativeToolTip": "TravelBookingWeb\\Views\\Home\\Info.cshtml",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAwFQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:41:42.181Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

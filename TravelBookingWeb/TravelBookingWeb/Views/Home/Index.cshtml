@@ -1,0 +1,151 @@
+﻿@model IEnumerable<TravelBookingWeb.Models.Hotel>
+
+@{
+    ViewData["Title"] = "Acasă";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true">
+    <style>
+        /* Asigurăm că slider-ul funcționează perfect pe orizontală */
+        .slider-container {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .destinations-grid {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            gap: 20px;
+            padding-bottom: 15px; /* Spațiu pentru umbre */
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+            /* Ascunde scrollbar-ul inestetic */
+            .destinations-grid::-webkit-scrollbar {
+                display: none;
+            }
+
+        .destination-card {
+            min-width: 320px; /* Lățime fixă pentru a nu se deforma */
+            flex-shrink: 0;
+            text-decoration: none;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px 12px 0 0;
+        }
+    </style>
+}
+
+<header class="hero">
+    <h1>Găsește următoarea ta aventură</h1>
+    <p>Descoperă hoteluri, case și pensiuni în întreaga lume.</p>
+
+    <form class="search-container" action="/Hotels/Oferte" method="get">
+        <div class="search-box">
+            <label>Unde mergi?</label>
+            <input type="text" name="destinatie" placeholder="Oraș, regiune sau țară" required>
+        </div>
+        <div class="search-box">
+            <label>Check-in</label>
+            <input type="date" required>
+        </div>
+        <div class="search-box">
+            <label>Check-out</label>
+            <input type="date" required>
+        </div>
+        <button type="submit" class="btn-search">Caută</button>
+    </form>
+</header>
+
+<section class="destinations-section">
+    <div class="section-header">
+        <h2 class="section-title">Hoteluri Recomandate</h2>
+        <div class="slider-controls">
+            <button class="control-btn prev" id="btnPrev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="control-btn next" id="btnNext"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <div class="destinations-grid" id="slider-track">
+
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var hotel in Model)
+                {
+                    // 1. Găsim prima imagine din galeria hotelului
+                    string imagineDeAfisat = hotel.Imagine;
+                    if (!string.IsNullOrEmpty(hotel.ImaginiGalerie))
+                    {
+                        // Luăm doar primul link până la virgulă
+                        imagineDeAfisat = hotel.ImaginiGalerie.Split(',').FirstOrDefault()?.Trim() ?? hotel.Imagine;
+                    }
+
+                    // 2. Link-ul actualizat duce către pagina publică pentru clienți (Hotels/DetaliiClient)
+                    <a href="/Hotels/DetaliiClient/@hotel.Id" class="destination-card">
+
+                        <img src="@imagineDeAfisat" alt="@hotel.Nume" class="card-image" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400?text=Imagine+Indisponibila';">
+
+                        <div class="card-content">
+                            <h3 class="card-title">@hotel.Nume</h3>
+                            <p class="card-desc">@(hotel.Destinatie?.Oras ?? "Destinație"), @(hotel.Destinatie?.Tara ?? "Necunoscută")</p>
+                            <p style="color: #0057ff; font-weight: bold; margin-top: 5px;">
+                                @for (int i = 0; i < hotel.Stele; i++)
+                                {
+                                    <i class="fa-solid fa-star" style="color:#ffc107;"></i>
+                                }
+                                | Scor: @hotel.Rating.ToString("0.0")
+                            </p>
+                        </div>
+                    </a>
+                }
+            }
+            else
+            {
+                <p class="text-center w-100 py-4">Momentan nu există oferte disponibile. Rulează Seeding-ul!</p>
+            }
+
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        // Logica pentru Slide Automat și Manual
+        document.addEventListener("DOMContentLoaded", function() {
+            const slider = document.getElementById('slider-track');
+            const btnNext = document.getElementById('btnNext');
+            const btnPrev = document.getElementById('btnPrev');
+
+            if(!slider) return;
+
+            // Lățimea pe care se face scroll (cât un card + marginea lui)
+            const scrollAmount = 340;
+
+            // Funcții pentru butoane manuale
+            btnNext.addEventListener('click', () => {
+                slider.scrollLeft += scrollAmount;
+            });
+
+            btnPrev.addEventListener('click', () => {
+                slider.scrollLeft -= scrollAmount;
+            });
+
+            // Autoscroll la fiecare 3.5 secunde
+            setInterval(() => {
+                // Dacă am ajuns la capăt (cu o marjă de 10px), ne întoarcem la început
+                if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 10) {
+                    slider.scrollLeft = 0;
+                } else {
+                    slider.scrollLeft += scrollAmount;
+                }
+            }, 3500);
+        });
+    </script>
+}

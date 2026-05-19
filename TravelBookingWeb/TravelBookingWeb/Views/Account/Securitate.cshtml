@@ -1,0 +1,118 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using TravelBookingWeb.Models
+@inject UserManager<ApplicationUser> UserManager
+@{
+    ViewData["Title"] = "Securitate și Parolă";
+
+    // Extragem user-ul real din baza de date
+    var currentUser = await UserManager.GetUserAsync(User);
+
+    // Setăm numele complet, iar dacă nu există, folosim email-ul ca fallback
+    var numeComplet = currentUser != null ? $"{currentUser.Nume} {currentUser.Prenume}".Trim() : (User.Identity.Name ?? "Utilizator");
+    if (string.IsNullOrWhiteSpace(numeComplet)) numeComplet = User.Identity.Name;
+
+    var initale = "";
+    if (!string.IsNullOrWhiteSpace(numeComplet))
+    {
+        initale = string.Join("", numeComplet.Split(' ', StringSplitOptions.RemoveEmptyEntries).Select(n => n[0])).ToUpper();
+        if (initale.Length > 2) initale = initale.Substring(0, 2);
+    }
+}
+
+<div class="container mt-5 mb-5 d-flex">
+    <div class="card border-0 shadow-sm rounded-3 me-4" style="width: 280px; height: fit-content;">
+        <div class="card-body text-center pt-4">
+
+            @if (!string.IsNullOrEmpty(currentUser?.ImagineProfil))
+            {
+                <img src="@currentUser.ImagineProfil" alt="Profil" class="rounded-circle mb-3 mx-auto shadow-sm" style="width: 90px; height: 90px; object-fit: cover;">
+            }
+            else
+            {
+                <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center mx-auto mb-3 fw-bold fs-2" style="width: 90px; height: 90px;">@initale</div>
+            }
+
+            <h5 class="fw-bold mb-1">@numeComplet</h5>
+            <p class="text-muted small mb-0">@currentUser?.Email</p>
+        </div>
+        <div class="list-group list-group-flush border-top">
+            <a href="/Account/Profil" class="list-group-item list-group-item-action py-3 text-muted"><i class="fa-solid fa-user me-2"></i> Date Personale</a>
+            <a href="/Account/Securitate" class="list-group-item list-group-item-action active fw-bold py-3"><i class="fa-solid fa-shield-halved me-2"></i> Securitate și Parolă</a>
+            <a href="/Account/Rezervari" class="list-group-item list-group-item-action py-3 text-muted"><i class="fa-solid fa-suitcase-rolling me-2"></i> Rezervările Mele</a>
+            <a href="/Account/Logout" class="list-group-item list-group-item-action py-3 text-danger fw-bold"><i class="fa-solid fa-right-from-bracket me-2"></i> Deconectare</a>
+        </div>
+    </div>
+
+    <div class="card border-0 shadow-sm rounded-3 flex-grow-1 p-4">
+        <h3 class="mb-4">Modificare Parolă</h3>
+
+        @if (TempData["MesajSucces"] != null)
+        {
+            <div class="alert alert-success"><i class="fa-solid fa-check-circle me-2"></i> @TempData["MesajSucces"]</div>
+        }
+        @if (TempData["Eroare"] != null)
+        {
+            <div class="alert alert-danger"><i class="fa-solid fa-triangle-exclamation me-2"></i> @TempData["Eroare"]</div>
+        }
+
+        <p class="text-muted mb-4">Pentru securitatea contului tău, te rugăm să nu folosești aceeași parolă pe care o folosești pe alte site-uri.</p>
+
+        <form id="formSecuritate" asp-action="Securitate" method="post" style="max-width: 500px;">
+            <div class="mb-3">
+                <label class="form-label fw-bold">Parola curentă</label>
+                <input type="password" name="parolaCurenta" id="parolaCurenta" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Parola nouă <i class="fa-solid fa-circle-exclamation text-warning ms-1 d-none" id="warn-noua" title="Introdu noua parolă"></i></label>
+                <input type="password" name="parolaNoua" id="parolaNoua" class="form-control" required>
+                <small class="text-muted d-block mt-1"><i class="fa-solid fa-circle-info me-1"></i> Parola trebuie să conțină minim 8 caractere (litere și cifre).</small>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label fw-bold">Confirmă parola nouă <i class="fa-solid fa-circle-exclamation text-warning ms-1 d-none" id="warn-confirma" title="Parolele nu se potrivesc sau câmpul e gol!"></i></label>
+                <input type="password" name="confirmaParola" id="confirmaParola" class="form-control" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary fw-bold px-4">Actualizează Parola</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const inputCurenta = document.getElementById('parolaCurenta');
+        const inputNoua = document.getElementById('parolaNoua');
+        const inputConfirma = document.getElementById('confirmaParola');
+
+        const warnNoua = document.getElementById('warn-noua');
+        const warnConfirma = document.getElementById('warn-confirma');
+        const formSecuritate = document.getElementById('formSecuritate');
+
+        inputCurenta.addEventListener('input', function() {
+            if(this.value.length > 0) {
+                if(inputNoua.value === '') warnNoua.classList.remove('d-none');
+                if(inputConfirma.value === '') warnConfirma.classList.remove('d-none');
+            }
+        });
+
+        inputNoua.addEventListener('input', function() {
+            warnNoua.classList.add('d-none');
+        });
+
+        inputConfirma.addEventListener('input', function() {
+            warnConfirma.classList.add('d-none');
+        });
+
+        formSecuritate.addEventListener('submit', function(e) {
+            if(inputNoua.value !== inputConfirma.value) {
+                e.preventDefault();
+                warnConfirma.classList.remove('d-none');
+                warnConfirma.setAttribute('title', 'Parolele introduse nu se potrivesc!');
+
+                inputConfirma.classList.add('is-invalid');
+                setTimeout(() => inputConfirma.classList.remove('is-invalid'), 2000);
+            }
+        });
+    </script>
+}

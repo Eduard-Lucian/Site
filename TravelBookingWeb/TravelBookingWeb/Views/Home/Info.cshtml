@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Informații";
+}
+
+@section Styles {
+    <style>
+        .info-container {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 0 40px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        section {
+            margin-bottom: 120px;
+            padding-top: 100px;
+            margin-top: -100px;
+        }
+
+        h2 {
+            color: #0057ff;
+            font-size: 2.2rem;
+            border-bottom: 3px solid #f0f4ff;
+            padding-bottom: 15px;
+            margin-bottom: 35px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            background: #f9fbff;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 5px solid #0057ff;
+        }
+
+            .contact-info p {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                font-weight: 500;
+            }
+
+            .contact-info i {
+                color: #0057ff;
+                margin-right: 15px;
+                font-size: 1.3rem;
+                width: 25px;
+            }
+    </style>
+}
+
+<div class="info-container">
+    
+    <section id="despre">
+        <h2><i class="fa-solid fa-circle-info"></i> Despre Noi</h2>
+        <p><strong>TravelBooking</strong> este rezultatul pasiunii pentru călătorii și tehnologie. Platforma a fost creată pentru a oferi utilizatorilor o fereastră către cele mai spectaculoase destinații ale lumii.</p>
+        <p>Acest proiect este dezvoltat de către <strong>Corbeanu Eduard Lucian</strong>, student în cadrul Universității din Craiova.</p>
+    </section>
+
+    <section id="termeni">
+        <h2><i class="fa-solid fa-file-contract"></i> Termeni și Condiții</h2>
+        <p>Prin accesarea platformei TravelBooking, utilizatorii sunt de acord să respecte standardele de utilizare corectă. Datele furnizate prin formularele de căutare și rezervare sunt utilizate strict pentru simularea procesului de booking în scop academic.</p>
+    </section>
+
+    <section id="politica">
+        <h2><i class="fa-solid fa-shield-halved"></i> Politica de Confidențialitate</h2>
+        <p><strong>Este strict interzisă copierea</strong> sau distribuirea neautorizată a acestui proiect.</p>
+    </section>
+
+    <section id="contact">
+        <h2><i class="fa-solid fa-address-book"></i> Contact</h2>
+        <div class="contact-info">
+            <p><i class="fa-solid fa-phone"></i> <strong>Telefon:</strong> 0767857335</p>
+            <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> corbeanu.eduard.u2j@student.ucv.ro</p>
+            <p><i class="fa-solid fa-building-columns"></i> <strong>Instituție:</strong> Universitatea din Craiova</p>
+            <p><i class="fa-solid fa-location-dot"></i> <strong>Locație:</strong> Craiova, România</p>
+        </div>
+    </section>
+
+</div>

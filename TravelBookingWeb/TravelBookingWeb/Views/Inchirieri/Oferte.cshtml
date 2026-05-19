@@ -1,0 +1,149 @@
+﻿@model IEnumerable<TravelBookingWeb.Models.Inchirieri_Masini>
+@{
+    ViewData["Title"] = "Închirieri Auto";
+
+    var masiniLista = Model ?? new List<TravelBookingWeb.Models.Inchirieri_Masini>();
+    var jsonMasini = System.Text.Json.JsonSerializer.Serialize(masiniLista.Select(m => new
+    {
+        id = m.Id,
+        name = m.Model_Masina ?? "Mașină",
+        type = m.Tip_Masina ?? "Compact",
+        trans = m.Transmisie ?? "Manuala",
+        price = m.Pret_pe_zi,
+        details = "A/C | Asigurare inclusă",
+        icon = (m.Tip_Masina != null && m.Tip_Masina.Contains("SUV")) ? "fa-truck-pickup" :
+               (m.Tip_Masina != null && m.Tip_Masina.Contains("Van")) ? "fa-van-shuttle" : "fa-car",
+        color = "#111"
+    }));
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/rezultate.css" asp-append-version="true">
+}
+<div class="results-page-container">
+    <aside class="filters-sidebar">
+        <h3>Filtrează Mașini</h3>
+        <hr style="border: none; border-top: 1px solid #eee; margin-bottom: 20px;">
+
+        <div class="filter-group">
+            <label><strong>Tip Mașină</strong></label>
+            <div class="checkbox-group" style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                <label class="filter-item"><input type="checkbox" class="filter-type" value="Compact"> Mică (Compact)</label>
+                <label class="filter-item"><input type="checkbox" class="filter-type" value="Sedan"> Sedan (Medie)</label>
+                <label class="filter-item"><input type="checkbox" class="filter-type" value="SUV"> SUV</label>
+                <label class="filter-item"><input type="checkbox" class="filter-type" value="Van"> Van / Minibus</label>
+            </div>
+        </div>
+        <br>
+
+        <div class="filter-group">
+            <label><strong>Transmisie</strong></label>
+            <div class="checkbox-group" style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                <label class="filter-item"><input type="checkbox" class="filter-trans" value="Automata"> Automată</label>
+                <label class="filter-item"><input type="checkbox" class="filter-trans" value="Manuala"> Manuală</label>
+            </div>
+        </div>
+        <br>
+
+        <div class="filter-group">
+            <label><strong>Preț maxim / zi</strong></label>
+            <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px;">
+                <input type="range" id="priceRange" min="50" max="600" step="10" value="600" style="flex: 1; accent-color: #0057ff;">
+                <div style="display: flex; align-items: center; border: 1px solid #ccc; border-radius: 6px; padding: 2px 8px;">
+                    <input type="number" id="priceInput" min="50" max="600" step="10" value="600" style="width: 50px; border: none; outline: none; font-weight: bold; text-align: center;">
+                    <span style="color: #666; font-size: 14px; margin-left: 5px;">RON</span>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <button class="btn-search" onclick="applyFilters()" style="width: 100%; padding: 12px; border-radius: 8px; background-color: #0057ff; color: white; border: none; font-weight: bold; cursor: pointer;">Aplică filtre</button>
+    </aside>
+
+    <main class="results-list">
+        <h2 class="results-header" id="results-count">Se încarcă mașinile...</h2>
+        <div id="items-container"></div>
+    </main>
+</div>
+
+@section Scripts {
+
+    <script id="data-masini" type="application/json">
+        @Html.Raw(jsonMasini)
+    </script>
+
+    <script>
+
+        const carsData = JSON.parse(document.getElementById('data-masini').textContent);
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const range = document.getElementById('priceRange');
+            const input = document.getElementById('priceInput');
+            if(range && input) {
+                range.addEventListener('input', () => input.value = range.value);
+                input.addEventListener('change', () => range.value = input.value);
+            }
+            applyFilters();
+        });
+
+        function applyFilters() {
+            const container = document.getElementById('items-container');
+            const header = document.getElementById('results-count');
+            if(!container || !header) return;
+
+            const selTypes = Array.from(document.querySelectorAll('.filter-type:checked')).map(c => c.value);
+            const selTrans = Array.from(document.querySelectorAll('.filter-trans:checked')).map(c => c.value);
+            const maxPrice = parseInt(document.getElementById('priceInput').value) || 600;
+
+            const filtered = carsData.filter(c => {
+                if (c.price > maxPrice) return false;
+
+                let carType = c.type || "";
+                if (selTypes.length > 0 && !selTypes.some(t => carType.includes(t))) return false;
+
+                let carTrans = c.trans || "";
+                if (selTrans.length > 0 && !selTrans.some(t => carTrans.includes(t))) return false;
+
+                return true;
+            });
+
+            header.innerText = `Am găsit ${filtered.length} mașini disponibile`;
+            container.innerHTML = "";
+
+            if(filtered.length === 0) {
+                container.innerHTML = "<p style='color:#666;'>Nicio mașină nu corespunde criteriilor.</p>"; return;
+            }
+
+          filtered.forEach(function(c) {
+                var numeParam = encodeURIComponent(c.name);
+                var bgColor = c.trans === 'Automata' ? '#0057ff' : '#666';
+
+                container.innerHTML +=
+                    '<div class="hotel-card">' +
+                        '<div class="hotel-img-container" style="width: 220px;">' +
+                            '<div style="width: 100%; height: 100%; min-height: 220px; background: linear-gradient(135deg, ' + c.color + ', #333); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white;">' +
+                                '<i class="fa-solid ' + c.icon + '" style="font-size: 60px; margin-bottom: 10px;"></i>' +
+                            '</div>' +
+                        '</div>' +
+                        '<div class="hotel-info">' +
+                            '<div>' +
+                                '<div class="hotel-title-row">' +
+                                    '<h3 class="hotel-title">' + c.name + ' <span style="font-size:14px; color:#666; font-weight:normal;">(' + c.type + ')</span></h3>' +
+                                    '<span class="badge-rating" style="background-color: ' + bgColor + ';">' + c.trans + '</span>' +
+                                '</div>' +
+                                '<p class="hotel-desc">' + c.details + '</p>' +
+                                '<div class="perks"><i class="fa-solid fa-check"></i> Anulare gratuită inclusă</div>' +
+                            '</div>' +
+                            '<div class="hotel-bottom-row">' +
+                                '<div class="price-box">' +
+                                    '<div class="price-value">' + c.price + ' RON</div>' +
+                                    '<div class="price-sub">per zi</div>' +
+                                '</div>' +
+                                '<a href="/Rezervari/Checkout?tip=InchirieriAuto&id=' + c.id + '&nume=' + numeParam + '&pret=' + c.price + '" class="btn-details">Rezervă mașina</a>' +
+                            '</div>' +
+                        '</div>' +
+                    '</div>';
+            });
+        }
+    </script>
+}

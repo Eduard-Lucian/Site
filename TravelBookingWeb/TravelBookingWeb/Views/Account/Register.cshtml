@@ -1,0 +1,64 @@
+﻿@model TravelBookingWeb.Models.ApplicationUser
+@{
+    // Dezactivăm layout-ul general pentru pagina de înregistrare
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Înregistrare - TravelBooking</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/general.css">
+    <link rel="stylesheet" href="~/css/auth.css">
+</head>
+<body class="auth-body">
+
+    <div class="auth-card" style="max-width: 550px;">
+        <div class="auth-logo">
+            <i class="fa-solid fa-plane"></i> TravelBooking
+        </div>
+        <p class="auth-subtitle">Creează-ți un cont pentru a rezerva următoarea aventură.</p>
+
+        <form class="auth-form" asp-controller="Account" asp-action="Register" method="post">
+
+            <div asp-validation-summary="All" class="text-danger" style="color: red; margin-bottom: 15px; font-size: 0.9em; text-align: left; background: #ffe6e6; padding: 10px; border-radius: 5px; display: @(ViewData.ModelState.IsValid ? "none" : "block");"></div>
+
+            @if (ViewBag.Eroare != null)
+            {
+                <div class="alert alert-danger" style="color: red; margin-bottom: 15px;">@ViewBag.Eroare</div>
+            }
+
+            <div class="form-row-auth">
+                <div class="form-group-auth">
+                    <label>Nume</label>
+                    <input type="text" asp-for="Nume" placeholder="Ex: Popescu" required>
+                </div>
+                <div class="form-group-auth">
+                    <label>Prenume</label>
+                    <input type="text" asp-for="Prenume" placeholder="Ex: Ion" required>
+                </div>
+            </div>
+
+            <label>Adresa de Email</label>
+            <input type="email" asp-for="Email" placeholder="ion.popescu@gmail.com" required>
+
+            <label>Parola</label>
+            <input type="password" name="parola" placeholder="Minim 6 caractere" required>
+
+            <button type="submit" class="btn-auth">Creează contul</button>
+        </form>
+
+        <div class="auth-links">
+            Ai deja un cont? <a href="/Account/Login">Autentifică-te aici</a>
+        </div>
+        <div class="auth-links" style="margin-top: 10px;">
+            <a href="/" style="color: #666; font-weight: normal;"><i class="fa-solid fa-arrow-left"></i> Înapoi pe site</a>
+        </div>
+    </div>
+
+</body>
+</html>

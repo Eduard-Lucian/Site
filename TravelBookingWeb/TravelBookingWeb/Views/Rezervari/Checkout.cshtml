@@ -1,0 +1,126 @@
+﻿@{
+    ViewData["Title"] = "Finalizare Rezervare";
+}
+
+<div class="container mt-5 mb-5" style="max-width: 900px; margin: 40px auto; padding: 20px;">
+    <h2 class="mb-4 text-center fw-bold"><i class="fa-solid fa-suitcase-rolling text-primary"></i> Finalizează Rezervarea</h2>
+    
+    <!-- Atenție: form-ul tău trimite către actiunea "ProceseazaPlata".
+         Asigură-te că metoda pe care tocmai am updatat-o în HomeController se numește tot "ProceseazaPlata" -->
+    <form asp-controller="Rezervari" asp-action="ProceseazaPlata" method="post">
+        
+        <!-- Câmpuri ascunse ca să știe backend-ul ce cumpărăm -->
+        <input type="hidden" name="tip" value="@ViewBag.TipServiciu" />
+        <input type="hidden" name="id" value="@ViewBag.ServiciuId" />
+        <input type="hidden" name="nume" value="@ViewBag.DetaliiServiciu" />
+        <input type="hidden" name="pret" value="@ViewBag.PretTotal" />
+
+        <div class="row">
+            <!-- Partea Stângă: Detalii Călătorie (Noua adăugare) -->
+            <div class="col-lg-6 mb-4">
+                <div class="card p-4 shadow-sm h-100 border-0 rounded-3">
+                    <h4 class="fw-bold"><i class="fa-solid fa-plane-arrival text-primary"></i> Detalii Călătorie</h4>
+                    <hr>
+                    
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Nume Pasager / Client</label>
+                        <input type="text" class="form-control" value="@User.Identity.Name" required>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <label class="form-label fw-bold">Check-in / Plecare</label>
+                            <input type="date" name="DataInceput" class="form-control" value="@ViewBag.Checkin" min="@DateTime.Now.ToString("yyyy-MM-dd")" required>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label fw-bold">Check-out / Retur</label>
+                            <input type="date" name="DataSfarsit" class="form-control" value="@ViewBag.Checkout" min="@DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Pachet Facilități</label>
+                        <select name="Facilitati" class="form-select">
+                            <option value="Standard" selected>Standard (Prețul de bază)</option>
+                            <option value="Premium (Spa, Mic dejun, Parcare)">Premium (+ Extra Cost)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="alert alert-info mt-auto mb-0 border-0 shadow-sm">
+                        <i class="fa-solid fa-circle-info"></i> Prețul final se va recalcula automat în funcție de numărul de zile, facilitățile alese și sezonul turistic (Tarif de vârf în Iulie-August).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partea Dreaptă: Metodă de plată și Confirmare -->
+            <div class="col-lg-6 mb-4">
+                <div class="card p-4 shadow-sm h-100 border-0 rounded-3">
+                    <h4 class="fw-bold"><i class="fa-solid fa-credit-card text-primary"></i> Metodă de Plată</h4>
+                    <hr>
+                    
+                    <div class="mb-4">
+                        <div class="form-check p-3 border rounded shadow-sm mb-2 bg-white">
+                            <input class="form-check-input ms-1 mt-1" type="radio" name="MetodaPlata" value="Card" id="checkoutCard" checked>
+                            <label class="form-check-label ms-2 fw-bold text-dark" for="checkoutCard">
+                                <i class="fa-brands fa-cc-visa text-primary fa-lg me-1"></i> Card Bancar Online
+                            </label>
+                        </div>
+                        <div class="form-check p-3 border rounded shadow-sm bg-white">
+                            <input class="form-check-input ms-1 mt-1" type="radio" name="MetodaPlata" value="Numerar" id="checkoutNumerar">
+                            <label class="form-check-label ms-2 fw-bold text-dark" for="checkoutNumerar">
+                                <i class="fa-solid fa-money-bill-wave text-success fa-lg me-1"></i> Plată la locație (Numerar)
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3" id="cardDetailsBlock">
+                        <label class="form-label fw-bold">Număr Card</label>
+                        <input type="text" class="form-control" placeholder="0000 0000 0000 0000" maxlength="16" id="inputCard">
+                    </div>
+                    
+                    <div class="mt-auto" style="background: #f4f7f6; padding: 15px; border-radius: 8px;">
+                        <div class="d-flex justify-content-between border-bottom border-secondary pb-2 mb-2">
+                            <span>Serviciu de bază:</span>
+                            <strong>@ViewBag.TipServiciu - @ViewBag.DetaliiServiciu</strong>
+                        </div>
+                        <div class="d-flex justify-content-between pt-2">
+                            <span class="fs-5 fw-bold text-dark">Preț/zi estimat:</span>
+                            <span class="fs-5 fw-bold text-primary">@ViewBag.PretTotal RON</span>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary w-100 mt-4 fw-bold p-3 fs-5 shadow-sm">Confirmă Rezervarea</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <!-- Funcție pentru ascunderea cardului când alegi plata cash -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const radioCard = document.getElementById('checkoutCard');
+            const radioNumerar = document.getElementById('checkoutNumerar');
+            const cardBlock = document.getElementById('cardDetailsBlock');
+            const inputCard = document.getElementById('inputCard');
+
+            function toggleCardFields() {
+                if(radioNumerar.checked) {
+                    // Dacă alege Numerar, ascundem secțiunea cardului și nu-l mai cerem obligatoriu
+                    cardBlock.style.display = 'none';
+                    inputCard.removeAttribute('required');
+                } else {
+                    // Dacă alege Card, o afișăm și facem numărul obligatoriu
+                    cardBlock.style.display = 'block';
+                    inputCard.setAttribute('required', 'required');
+                }
+            }
+
+            radioCard.addEventListener('change', toggleCardFields);
+            radioNumerar.addEventListener('change', toggleCardFields);
+            
+            toggleCardFields(); // Rulăm validarea la încărcarea paginii
+        });
+    </script>
+}

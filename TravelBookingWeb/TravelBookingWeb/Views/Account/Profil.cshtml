@@ -1,0 +1,105 @@
+﻿
+@model TravelBookingWeb.Models.ApplicationUser
+@{
+    ViewData["Title"] = "Date Personale";
+    var initialaNume = !string.IsNullOrEmpty(Model.Nume) ? Model.Nume.Substring(0, 1).ToUpper() : "U";
+    var initialaPrenume = !string.IsNullOrEmpty(Model.Prenume) ? Model.Prenume.Substring(0, 1).ToUpper() : "N";
+}
+
+<div class="container mt-5 mb-5 d-flex">
+    <div class="card border-0 shadow-sm rounded-3 me-4" style="width: 280px; height: fit-content;">
+        <div class="card-body text-center pt-4">
+            @if (!string.IsNullOrEmpty(Model.ImagineProfil))
+            {
+                <img src="@Model.ImagineProfil" class="rounded-circle border border-3 border-primary shadow-sm mx-auto mb-3"
+                     style="width: 90px; height: 90px; object-fit: cover;" alt="Profil">
+            }
+            else
+            {
+                <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center mx-auto mb-3 fw-bold fs-2"
+                     style="width: 90px; height: 90px;">
+                    @(initialaPrenume + initialaNume)
+                </div>
+            }
+
+            <h5 class="fw-bold mb-1">@Model.Prenume @Model.Nume</h5>
+            <p class="text-muted small">@Model.Email</p>
+        </div>
+        <div class="list-group list-group-flush border-top">
+            <a href="/Account/Profil" class="list-group-item list-group-item-action active fw-bold py-3"><i class="fa-solid fa-user me-2"></i> Date Personale</a>
+            <a href="/Account/Securitate" class="list-group-item list-group-item-action py-3 text-muted"><i class="fa-solid fa-shield-halved me-2"></i> Securitate și Parolă</a>
+            <a href="/Account/Rezervari" class="list-group-item list-group-item-action py-3 text-muted"><i class="fa-solid fa-suitcase-rolling me-2"></i> Rezervările Mele</a>
+            <a href="/Account/Logout" class="list-group-item list-group-item-action py-3 text-danger fw-bold"><i class="fa-solid fa-right-from-bracket me-2"></i> Deconectare</a>
+        </div>
+    </div>
+
+    <div class="card border-0 shadow-sm rounded-3 flex-grow-1 p-4">
+        <h3 class="mb-4">Date Personale</h3>
+
+        @if (TempData["MesajSucces"] != null)
+        {
+            <div class="alert alert-success"><i class="fa-solid fa-check-circle me-2"></i> @TempData["MesajSucces"]</div>
+        }
+
+        <form asp-action="Profil" method="post" enctype="multipart/form-data">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Nume <i class="fa-solid fa-circle-exclamation text-warning ms-1 d-none" id="warn-nume" title="Acest câmp nu poate fi gol!"></i></label>
+                    <input type="text" name="Nume" id="input-nume" class="form-control" value="@Model.Nume" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Prenume <i class="fa-solid fa-circle-exclamation text-warning ms-1 d-none" id="warn-prenume" title="Acest câmp nu poate fi gol!"></i></label>
+                    <input type="text" name="Prenume" id="input-prenume" class="form-control" value="@Model.Prenume" required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Adresă de Email <small class="text-muted">(Read-only)</small></label>
+                    <input type="email" class="form-control" value="@Model.Email" readonly disabled>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Număr de Telefon <i class="fa-solid fa-circle-exclamation text-warning ms-1 @(string.IsNullOrEmpty(Model.PhoneNumber) ? "" : "d-none")" id="warn-telefon" title="Informație lipsă"></i></label>
+                    <input type="text" name="PhoneNumber" id="input-telefon" class="form-control" value="@Model.PhoneNumber" placeholder="Ex: 0712345678">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Adresă de facturare <i class="fa-solid fa-circle-exclamation text-warning ms-1 @(string.IsNullOrEmpty(Model.Adresa) ? "" : "d-none")" id="warn-adresa" title="Informație lipsă"></i></label>
+                    <input type="text" name="Adresa" id="input-adresa" class="form-control" value="@Model.Adresa" placeholder="Ex: Str. Libertății, nr. 45, București">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Schimbă Imaginea de Profil</label>
+                    <input type="file" name="imagineProfil" class="form-control" accept="image/*">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary fw-bold px-4">Salvează Modificările</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function setupLiveValidation(inputId, warnId) {
+            const input = document.getElementById(inputId);
+            const warn = document.getElementById(warnId);
+
+            if(input && warn) {
+                input.addEventListener('input', function() {
+                    if(this.value.trim() === '') {
+                        warn.classList.remove('d-none');
+                    } else {
+                        warn.classList.add('d-none');
+                    }
+                });
+            }
+        }
+
+        setupLiveValidation('input-nume', 'warn-nume');
+        setupLiveValidation('input-prenume', 'warn-prenume');
+        setupLiveValidation('input-telefon', 'warn-telefon');
+        setupLiveValidation('input-adresa', 'warn-adresa');
+    </script>
+}

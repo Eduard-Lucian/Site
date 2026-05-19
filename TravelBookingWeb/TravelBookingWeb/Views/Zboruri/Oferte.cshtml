@@ -1,0 +1,151 @@
+﻿@model IEnumerable<TravelBookingWeb.Models.Zbor>
+@{
+    ViewData["Title"] = "Zboruri";
+    
+    var zboruriLista = Model ?? new List<TravelBookingWeb.Models.Zbor>();
+    var jsonZboruri = System.Text.Json.JsonSerializer.Serialize(zboruriLista.Select(z => new
+    {
+        id = z.Id,
+        airline = z.CompanieAeriana ?? "Companie Necunoscută",
+        stops = z.Escale ?? "Direct",
+        price = z.Pret,
+        route = "București - " + (z.Destinatie != null ? z.Destinatie.Oras : "Destinație"),
+        time = z.Durata ?? "2h 30m",
+        bag = "Bagaj inclus",
+        color = (z.CompanieAeriana != null && z.CompanieAeriana.Contains("TAROM")) ? "#0057ff" :
+                (z.CompanieAeriana != null && z.CompanieAeriana.Contains("Wizz")) ? "#e3000f" : "#073590"
+    }));
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/rezultate.css" asp-append-version="true">
+}
+
+<div class="results-page-container">
+    <aside class="filters-sidebar">
+        <h3>Filtrează Zboruri</h3>
+        <hr style="border: none; border-top: 1px solid #eee; margin-bottom: 20px;">
+
+        <div class="filter-group">
+            <label><strong>Companie Aeriană</strong></label>
+            <div class="checkbox-group" style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                <label class="filter-item"><input type="checkbox" class="filter-airline" value="TAROM"> TAROM</label>
+                <label class="filter-item"><input type="checkbox" class="filter-airline" value="Wizz Air"> Wizz Air</label>
+                <label class="filter-item"><input type="checkbox" class="filter-airline" value="Ryanair"> Ryanair</label>
+                <label class="filter-item"><input type="checkbox" class="filter-airline" value="Air France"> Air France</label>
+            </div>
+        </div>
+        <br>
+
+        <div class="filter-group">
+            <label><strong>Escale</strong></label>
+            <div class="checkbox-group" style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                <label class="filter-item"><input type="checkbox" class="filter-stops" value="Direct"> Zbor Direct</label>
+                <label class="filter-item"><input type="checkbox" class="filter-stops" value="1 Escala"> 1 Escală</label>
+            </div>
+        </div>
+        <br>
+
+        <div class="filter-group">
+            <label><strong>Preț maxim / pasager</strong></label>
+            <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px;">
+                <input type="range" id="priceRange" min="0" max="5000" step="50" value="5000" style="flex: 1; accent-color: #0057ff;">
+                <div style="display: flex; align-items: center; border: 1px solid #ccc; border-radius: 6px; padding: 2px 8px;">
+                    <input type="number" id="priceInput" min="0" max="5000" step="50" value="5000" style="width: 60px; border: none; outline: none; font-weight: bold; text-align: center;">
+                    <span style="color: #666; font-size: 14px; margin-left: 5px;">RON</span>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <button class="btn-search" onclick="applyFilters()" style="width: 100%; padding: 12px; border-radius: 8px; background-color: #0057ff; color: white; border: none; font-weight: bold; cursor: pointer;">Aplică filtre</button>
+    </aside>
+
+    <main class="results-list">
+        <h2 class="results-header" id="results-count">Se încarcă zborurile...</h2>
+        <div id="items-container"></div>
+    </main>
+</div>
+
+@section Scripts {
+   
+    <script id="data-zboruri" type="application/json">
+        @Html.Raw(jsonZboruri)
+    </script>
+
+    <script>
+       
+        const flightsData = JSON.parse(document.getElementById('data-zboruri').textContent);
+        
+        document.addEventListener("DOMContentLoaded", () => {
+            const range = document.getElementById('priceRange');
+            const input = document.getElementById('priceInput');
+            if(range && input) {
+                range.addEventListener('input', () => input.value = range.value);
+                input.addEventListener('change', () => range.value = input.value);
+            }
+            applyFilters();
+        });
+
+        function applyFilters() {
+            const container = document.getElementById('items-container');
+            const header = document.getElementById('results-count');
+            if(!container || !header) return;
+
+            const selAirlines = Array.from(document.querySelectorAll('.filter-airline:checked')).map(c => c.value);
+            const selStops = Array.from(document.querySelectorAll('.filter-stops:checked')).map(c => c.value);
+            const maxPrice = parseInt(document.getElementById('priceInput').value) || 5000;
+
+            const filtered = flightsData.filter(f => {
+                if (f.price > maxPrice) return false;
+                
+                let fAir = f.airline || "";
+                if (selAirlines.length > 0 && !selAirlines.some(a => fAir.includes(a))) return false;
+                
+                let fStops = f.stops || "";
+                if (selStops.length > 0 && !selStops.some(s => fStops.includes(s))) return false;
+                
+                return true;
+            });
+
+            header.innerText = `Am găsit ${filtered.length} zboruri disponibile`;
+            container.innerHTML = "";
+
+            if(filtered.length === 0) {
+                container.innerHTML = "<p style='color:#666;'>Niciun zbor nu corespunde criteriilor tale.</p>"; return;
+            }
+
+           filtered.forEach(function(f) {
+                var numeParam = encodeURIComponent(f.route + " (" + f.airline + ")");
+                var bgColor = f.stops === 'Direct' ? '#008009' : '#ffb400';
+                
+                container.innerHTML +=
+                    '<div class="hotel-card">' +
+                        '<div class="hotel-img-container" style="width: 200px;">' +
+                            '<div style="width: 100%; height: 100%; min-height: 220px; background: linear-gradient(135deg, ' + f.color + ', #333); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white;">' +
+                                '<i class="fa-solid fa-plane" style="font-size: 50px; margin-bottom: 10px;"></i>' +
+                                '<span style="font-weight: bold; text-align: center; padding: 0 5px;">' + f.airline + '</span>' +
+                            '</div>' +
+                        '</div>' +
+                        '<div class="hotel-info">' +
+                            '<div>' +
+                                '<div class="hotel-title-row">' +
+                                    '<h3 class="hotel-title" style="font-size: 18px;">' + f.route + '</h3>' +
+                                    '<span class="badge-rating" style="background-color: ' + bgColor + ';">' + f.stops + '</span>' +
+                                '</div>' +
+                                '<p class="hotel-desc"><i class="fa-regular fa-clock"></i> ' + f.time + '</p>' +
+                                '<div class="perks"><i class="fa-solid fa-suitcase"></i> ' + f.bag + '</div>' +
+                            '</div>' +
+                            '<div class="hotel-bottom-row">' +
+                                '<div class="price-box">' +
+                                    '<div class="price-value">' + f.price + ' RON</div>' +
+                                    '<div class="price-sub">per pasager</div>' +
+                                '</div>' +
+                               '<a href="/Rezervari/Checkout?tip=Zbor&id=' + f.id + '&nume=' + numeParam + '&pret=' + f.price + '" class="btn-details">Rezervă zbor</a>' +
+                            '</div>' +
+                        '</div>' +
+                    '</div>';
+            });
+        }
+    </script>
+}

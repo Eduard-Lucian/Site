@@ -1,0 +1,161 @@
+﻿@model TravelBookingWeb.Models.Hotel
+
+@{
+    ViewData["Title"] = "Adaugă un Hotel Nou";
+}
+
+@section Styles {
+    <style>
+        /* 1. Semnul exclamării și textul roșu sub câmp */
+        .field-validation-error {
+            color: #dc3545;
+            font-size: 0.9rem;
+            margin-top: 5px;
+            display: block;
+            font-weight: bold;
+        }
+        
+            .field-validation-error::before {
+                content: "\f06a"; /* Iconiță FontAwesome (Exclamation Circle) */
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                margin-right: 6px;
+            }
+
+        /* 2. Semnul exclamării DIRECT în căsuța de text și margini roșii */
+        .input-validation-error {
+            border-color: #dc3545 !important;
+            padding-right: calc(1.5em + 0.75rem);
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right calc(0.375em + 0.1875rem) center;
+            background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+        }
+        
+            .input-validation-error:focus {
+                box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25) !important;
+            }
+    </style>
+}
+
+<div class="container mt-5 mb-5">
+    <h2 class="fw-bold mb-4 text-dark">Adaugă un Hotel Nou</h2>
+    <hr />
+    
+    <div class="row">
+        <div class="col-md-8">
+            <form asp-action="Create" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <!-- NUME -->
+                <div class="form-group mb-3">
+                    <label asp-for="Nume" class="control-label fw-bold"></label>
+                    <input asp-for="Nume" class="form-control form-control-lg" placeholder="Ex: Hotel Continental" required data-val="true" data-val-required="Te rugăm să completezi numele hotelului." />
+                    <span asp-validation-for="Nume" class="text-danger"></span>
+                </div>
+
+                <!-- DESCRIERE (Cu exemplu) -->
+                <div class="form-group mb-3">
+                    <label asp-for="Descriere" class="control-label fw-bold"></label>
+                    <textarea asp-for="Descriere" class="form-control" rows="5"
+                              placeholder="Ex: Situat în inima orașului, acest hotel luxos reprezintă definiția rafinamentului. Oferă o vedere panoramică spectaculoasă, camere cu design modern, mic dejun bufet bogat și un centru SPA complet echipat pentru o relaxare totală..."
+                              required data-val="true" data-val-required="Descrierea este obligatorie."></textarea>
+                    <span asp-validation-for="Descriere" class="text-danger"></span>
+                </div>
+
+                <!-- LINK IMAGINE -->
+                <div class="form-group mb-3">
+                    <label asp-for="Imagine" class="control-label fw-bold">Link Imagine Principală</label>
+                    <input asp-for="Imagine" class="form-control" placeholder="Ex: https://images.unsplash.com/photo-..." required data-val="true" data-val-required="Avem nevoie de o imagine pentru a o afișa pe site." />
+                    <span asp-validation-for="Imagine" class="text-danger"></span>
+                </div>
+
+                <div class="row">
+                    <!-- STELE -->
+                    <div class="form-group col-md-4 mb-3">
+                        <label asp-for="Stele" class="control-label fw-bold"></label>
+                        <input asp-for="Stele" type="number" min="1" max="5" class="form-control" placeholder="1-5" required data-val="true" data-val-required="Obligatoriu." />
+                        <span asp-validation-for="Stele" class="text-danger"></span>
+                    </div>
+
+                    <!-- RATING -->
+                    <div class="form-group col-md-4 mb-3">
+                        <label asp-for="Rating" class="control-label fw-bold">Rating (Scor)</label>
+                        <input asp-for="Rating" type="number" step="0.1" min="1" max="10" class="form-control" placeholder="Ex: 9.5" required data-val="true" data-val-required="Obligatoriu." />
+                        <span asp-validation-for="Rating" class="text-danger"></span>
+                    </div>
+
+                    <!-- PREȚ -->
+                    <div class="form-group col-md-4 mb-3">
+                        <label asp-for="Pret" class="control-label fw-bold">Preț / Noapte</label>
+                        <input asp-for="Pret" type="number" step="0.01" min="0" class="form-control" placeholder="Ex: 450" required data-val="true" data-val-required="Obligatoriu." />
+                        <span asp-validation-for="Pret" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- DESTINAȚIE (Listă Populare + Scris de mână) -->
+                <div class="form-group mb-4">
+                    <label class="control-label fw-bold">Destinație</label>
+                    
+                    <input type="text" name="DestinatieText" id="destinatieInput" class="form-control form-control-lg" list="listaDestinatii"
+                           placeholder="-- Alege din listă sau scrie (ex: Sibiu, România) --" required data-val="true" data-val-required="Te rugăm să specifici o destinație." autocomplete="off">
+                    
+                    <datalist id="listaDestinatii">
+                        <!-- Câteva sugestii populare -->
+                        <option value="București, România"></option>
+                        <option value="Brașov, România"></option>
+                        <option value="Cluj-Napoca, România"></option>
+                        <option value="Paris, Franța"></option>
+                        <option value="Roma, Italia"></option>
+                        <option value="Londra, Marea Britanie"></option>
+                        <option value="Dubai, EAU"></option>
+                        <option value="Madrid, Spania"></option>
+                    </datalist>
+                    
+                    <!-- Validare pentru destinație -->
+                    <span class="text-danger field-validation-valid" data-valmsg-for="DestinatieText" data-valmsg-replace="true"></span>
+                </div>
+
+                <!-- FACILITĂȚI (Bife) -->
+                <div class="form-group mb-4 p-3 border rounded bg-light">
+                    <label class="fw-bold mb-2">Facilități Extra</label>
+                    <div class="d-flex gap-4">
+                        <div class="form-check">
+                            <input asp-for="AreWiFi" class="form-check-input" />
+                            <label asp-for="AreWiFi" class="form-check-label">Wi-Fi Gratuit</label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="AreMicDejun" class="form-check-input" />
+                            <label asp-for="AreMicDejun" class="form-check-label">Mic Dejun Inclus</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2">
+                    <button type="submit" class="btn btn-primary px-4 py-2 fw-bold" style="background-color: #0057ff;">Salvează Hotelul</button>
+                    <a asp-action="Index" class="btn btn-secondary px-4 py-2 ms-2 fw-bold">Înapoi la listă</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <!-- Acest script preia automat atributele data-val și activează CSS-ul cu erorile și semnele exclamării[cite: 2] -->
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    
+    <script>
+        // Trucul pentru a face dropdown-ul să afișeze toată lista la click, dar să păstreze textul[cite: 2]
+        document.getElementById('destinatieInput').addEventListener('focus', function() {
+            this.dataset.oldValue = this.value;
+            this.value = '';
+        });
+        document.getElementById('destinatieInput').addEventListener('blur', function() {
+            if(this.value.trim() === '') {
+                this.value = this.dataset.oldValue || '';
+            }
+        });
+    </script>
+}
