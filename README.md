@@ -1,6 +1,6 @@
 # 🌍 TravelBooking - Platformă Web de Rezervări Turistice
 
-Proiect dezvoltat în cadrul disciplinei **Proiectarea Aplicațiilor Web (PAW)**. Această platformă este un sistem complet de rezervări turistice, conceput să ofere o experiență de utilizare fluidă și o gestiune securizată a datelor, atât pentru clienți, cât și pentru administratorii de sistem.
+Această platformă este un sistem complet de rezervări turistice, conceput să ofere o experiență de utilizare fluidă și o gestiune securizată a datelor, atât pentru clienți, cât și pentru administratorii de sistem.
 
 Proiectul a fost construit de la zero, punând accent pe o arhitectură modulară, performanță și securitate. Acesta a fost inspirat de site-uri precum **Booking.com** sau **Airbnb**, TravelBooking este o platformă web completă (Full-Stack) dezvoltată pentru a digitaliza și simplifica experiența rezervărilor de vacanță. Proiectul simulează un mediu de business real din turism, punând accent pe viteză, securitate și un flux de utilizare extrem de intuitiv.
 
